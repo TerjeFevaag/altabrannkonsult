@@ -83,6 +83,18 @@ export default function BranntilsynPage() {
             </p>
           </ScrollReveal>
 
+          <ScrollReveal variant="scale" className="mb-10">
+            <div className="relative h-64 lg:h-80 rounded-[20px] overflow-hidden">
+              <Image
+                src="/images/service-branntilsyn.jpg"
+                alt="Branntilsyn og inspeksjon av brannslukningsutstyr"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 800px"
+              />
+            </div>
+          </ScrollReveal>
+
           <div className="border-t border-brand-gray my-10" />
 
           <ScrollReveal>

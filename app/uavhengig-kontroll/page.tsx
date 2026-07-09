@@ -78,6 +78,18 @@ export default function UavhengigKontrollPage() {
             </p>
           </ScrollReveal>
 
+          <ScrollReveal variant="scale" className="mb-10">
+            <div className="relative h-64 lg:h-80 rounded-[20px] overflow-hidden">
+              <Image
+                src="/images/service-uavhengig-kontroll.jpg"
+                alt="Uavhengig kontroll av brannkonsept på byggeplass"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 800px"
+              />
+            </div>
+          </ScrollReveal>
+
           <div className="border-t border-brand-gray my-10" />
 
           <ScrollReveal>
