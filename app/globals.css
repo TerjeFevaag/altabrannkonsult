@@ -1,26 +1,88 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-brand-orange: #f57e23;
+  --color-brand-dark: #111111;
+  --color-brand-black: #000000;
+  --color-brand-white: #ffffff;
+  --color-brand-lightgray: #f5f5f5;
+  --color-brand-gray: #ececec;
+  --color-brand-darkgray: #555555;
+  --color-brand-red: #b20000;
+
+  --font-sans: var(--font-lato), sans-serif;
+  --font-display: var(--font-lato), sans-serif;
+  --font-accent: var(--font-dancing), cursive;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-brand-black);
+}
+
+/* ── Keyframes ── */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(26px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ── Hero stagger (runs on load, no JS needed) ── */
+.hero-1 { animation: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.05s both; }
+.hero-2 { animation: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.20s both; }
+.hero-3 { animation: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.35s both; }
+.hero-4 { animation: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.50s both; }
+.hero-5 { animation: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.65s both; }
+
+/* ── Scroll-reveal (controlled by ScrollReveal component) ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-fade {
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.5s ease,
+              transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.in,
+.reveal-fade.in,
+.reveal-scale.in {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── Alta "Nordlys" signature: aurora ribbon drift ── */
+@keyframes aurora-drift-1 {
+  0%, 100% { transform: translateX(-6%) translateY(0) scaleY(1); opacity: 0.35; }
+  50%      { transform: translateX(4%) translateY(-3%) scaleY(1.08); opacity: 0.55; }
+}
+@keyframes aurora-drift-2 {
+  0%, 100% { transform: translateX(5%) translateY(2%) scaleY(1); opacity: 0.25; }
+  50%      { transform: translateX(-5%) translateY(-2%) scaleY(1.1); opacity: 0.45; }
+}
+@keyframes aurora-drift-3 {
+  0%, 100% { transform: translateX(-3%) translateY(-1%) scaleY(1); opacity: 0.18; }
+  50%      { transform: translateX(6%) translateY(3%) scaleY(1.05); opacity: 0.32; }
+}
+.aurora-ribbon-1 { animation: aurora-drift-1 14s ease-in-out infinite; }
+.aurora-ribbon-2 { animation: aurora-drift-2 18s ease-in-out infinite; }
+.aurora-ribbon-3 { animation: aurora-drift-3 22s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .aurora-ribbon-1, .aurora-ribbon-2, .aurora-ribbon-3 {
+    animation: none;
+  }
 }
