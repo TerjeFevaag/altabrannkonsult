@@ -21,18 +21,18 @@ const dancing = Dancing_Script({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.altabrannkonsult.no'),
-  title: 'Brannprosjektering i Alta | Alta Brannkonsult',
+  title: 'Brannprosjektering i Alta | Brannkonsult AS',
   description:
-    'Alta Brannkonsult tilbyr brannkonsept, brannprosjektering og branntilsyn i Alta og Finnmark. Sentralt godkjent foretak. Få uforpliktende tilbud i dag.',
+    'Brannkonsult AS tilbyr brannkonsept, brannprosjektering og branntilsyn i Alta og Finnmark. Sentralt godkjent foretak. Få uforpliktende tilbud i dag.',
   alternates: {
     canonical: 'https://www.altabrannkonsult.no',
   },
   openGraph: {
-    title: 'Brannprosjektering i Alta | Alta Brannkonsult',
+    title: 'Brannprosjektering i Alta | Brannkonsult AS',
     description:
-      'Alta Brannkonsult tilbyr brannkonsept, brannprosjektering og branntilsyn i Alta og Finnmark.',
+      'Brannkonsult AS tilbyr brannkonsept, brannprosjektering og branntilsyn i Alta og Finnmark.',
     url: 'https://www.altabrannkonsult.no',
-    siteName: 'Alta Brannkonsult',
+    siteName: 'Brannkonsult AS',
     locale: 'nb_NO',
     type: 'website',
     images: [
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
         url: '/images/hero.jpg',
         width: 1200,
         height: 630,
-        alt: 'Alta Brannkonsult',
+        alt: 'Brannkonsult AS',
       },
     ],
   },
@@ -49,8 +49,8 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  name: 'Alta Brannkonsult AS',
-  description: 'Brannprosjektering og brannkonsept i Alta',
+  name: 'Brannkonsult AS',
+  description: 'Brannkonsult AS – satsing i Alta og Nord-Norge for brannprosjektering og brannkonsept',
   telephone: '+47 400 51 437',
   email: 'post@altabrannkonsult.no',
   address: {

@@ -6,7 +6,7 @@ import AuroraRibbon from '@/components/AuroraRibbon'
 import WaveDivider from '@/components/WaveDivider'
 
 export const metadata: Metadata = {
-  title: 'Riktig røykvarsler redder liv | Alta Brannkonsult',
+  title: 'Riktig røykvarsler redder liv | Brannkonsult AS',
   description:
     'Er du godt nok sikret hvis det oppstår brann om natten? Vi forklarer krav til røykvarslere i Alta, forskjellen på ionisasjons- og optiske varslere, og riktig plassering.',
   alternates: { canonical: 'https://www.altabrannkonsult.no/artikler/roykvarsler' },
@@ -117,7 +117,7 @@ export default function RoykvarslerPage() {
 
               <ScrollReveal>
                 <p className="leading-relaxed">
-                  Har du spørsmål om brannsikkerhet i din bolig eller ditt bygg? Alta Brannkonsult er sentralt godkjente brannrådgivere og hjelper deg gjerne med brannkonsept, brannprosjektering og branntilsyn.{' '}
+                  Har du spørsmål om brannsikkerhet i din bolig eller ditt bygg? Brannkonsult AS er sentralt godkjente brannrådgivere og hjelper deg gjerne med brannkonsept, brannprosjektering og branntilsyn.{' '}
                   <Link href="/kontakt-oss" className="text-brand-orange font-bold hover:underline">
                     Ta kontakt med oss her.
                   </Link>

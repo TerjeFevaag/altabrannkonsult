@@ -8,9 +8,9 @@ import AuroraRibbon from '@/components/AuroraRibbon'
 import WaveDivider from '@/components/WaveDivider'
 
 export const metadata: Metadata = {
-  title: 'Kontakt Alta Brannkonsult | Få uforpliktende tilbud',
+  title: 'Kontakt Brannkonsult AS | Få uforpliktende tilbud',
   description:
-    'Kontakt Alta Brannkonsult for uforpliktende tilbud på brannkonsept og brannprosjektering i Alta. Sentralt godkjent. Vi svarer innen 24 timer. Ring +47 400 51 437.',
+    'Kontakt Brannkonsult AS for uforpliktende tilbud på brannkonsept og brannprosjektering i Alta. Sentralt godkjent. Vi svarer innen 24 timer. Ring +47 400 51 437.',
   alternates: { canonical: 'https://www.altabrannkonsult.no/kontakt-oss' },
 }
 
@@ -37,7 +37,7 @@ export default function KontaktOssPage() {
             <span>Kontakt oss</span>
           </div>
           <h1 className="hero-2 text-brand-white text-4xl lg:text-5xl font-black max-w-2xl">
-            Kontakt Alta Brannkonsult
+            Kontakt Brannkonsult AS
           </h1>
           <p className="hero-3 text-brand-white/70 text-lg mt-4 max-w-xl leading-relaxed">
             Ta kontakt for et uforpliktende tilbud. Vi svarer innen 24 timer.

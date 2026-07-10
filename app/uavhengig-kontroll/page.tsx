@@ -8,9 +8,9 @@ import AuroraRibbon from '@/components/AuroraRibbon'
 import WaveDivider from '@/components/WaveDivider'
 
 export const metadata: Metadata = {
-  title: 'Uavhengig kontroll av brannkonsept i Alta | Alta Brannkonsult',
+  title: 'Uavhengig kontroll av brannkonsept i Alta | Brannkonsult AS',
   description:
-    'Alta Brannkonsult utfører uavhengig kontroll av brannkonsept og brannprosjektering i Alta og Finnmark. Sentralt godkjent, nøytral part. Få tilbud i dag.',
+    'Brannkonsult AS utfører uavhengig kontroll av brannkonsept og brannprosjektering i Alta og Finnmark. Sentralt godkjent, nøytral part. Få tilbud i dag.',
   alternates: { canonical: 'https://www.altabrannkonsult.no/uavhengig-kontroll' },
 }
 

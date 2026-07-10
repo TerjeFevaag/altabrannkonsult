@@ -8,9 +8,9 @@ import AuroraRibbon from '@/components/AuroraRibbon'
 import WaveDivider from '@/components/WaveDivider'
 
 export const metadata: Metadata = {
-  title: 'Brannprosjektering i Alta | Alta Brannkonsult',
+  title: 'Brannprosjektering i Alta | Brannkonsult AS',
   description:
-    'Alta Brannkonsult tilbyr brannprosjektering i Alta og Finnmark. Sentralt godkjent TKL 1+2. Fra ca. 15 000 kr, alltid fastpris. Få uforpliktende tilbud.',
+    'Brannkonsult AS tilbyr brannprosjektering i Alta og Finnmark. Sentralt godkjent TKL 1+2. Fra ca. 15 000 kr, alltid fastpris. Få uforpliktende tilbud.',
   alternates: { canonical: 'https://www.altabrannkonsult.no/brannprosjektering' },
 }
 

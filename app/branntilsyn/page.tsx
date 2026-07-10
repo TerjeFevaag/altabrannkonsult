@@ -8,9 +8,9 @@ import AuroraRibbon from '@/components/AuroraRibbon'
 import WaveDivider from '@/components/WaveDivider'
 
 export const metadata: Metadata = {
-  title: 'Branntilsyn og branninspeksjon i Alta | Alta Brannkonsult',
+  title: 'Branntilsyn og branninspeksjon i Alta | Brannkonsult AS',
   description:
-    'Har du fått pålegg etter branntilsyn i Alta? Alta Brannkonsult tilbyr branninspeksjon, tilstandsrapport og handlingsplan. Sentralt godkjent. Kontakt oss i dag.',
+    'Har du fått pålegg etter branntilsyn i Alta? Brannkonsult AS tilbyr branninspeksjon, tilstandsrapport og handlingsplan. Sentralt godkjent. Kontakt oss i dag.',
   alternates: { canonical: 'https://www.altabrannkonsult.no/branntilsyn' },
 }
 

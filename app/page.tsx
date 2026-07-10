@@ -10,9 +10,9 @@ import AuroraRibbon from '@/components/AuroraRibbon'
 import WaveDivider from '@/components/WaveDivider'
 
 export const metadata: Metadata = {
-  title: 'Brannprosjektering i Alta | Alta Brannkonsult',
+  title: 'Brannprosjektering i Alta | Brannkonsult AS',
   description:
-    'Alta Brannkonsult tilbyr brannkonsept, brannprosjektering og branntilsyn i Alta og Finnmark. Sentralt godkjent foretak. Få uforpliktende tilbud i dag.',
+    'Brannkonsult AS tilbyr brannkonsept, brannprosjektering og branntilsyn i Alta og Finnmark. Sentralt godkjent foretak. Få uforpliktende tilbud i dag.',
   alternates: { canonical: 'https://www.altabrannkonsult.no' },
 }
 
@@ -68,7 +68,7 @@ const reviews = [
   },
   {
     quote:
-      'Alta Brannkonsult er lette å samarbeide med, de svarer raskt, finner gode løsninger og leverer arbeid av jevnt høy kvalitet. Brannotatene deres er praktiske og enkle å bruke.',
+      'Brannkonsult AS er lette å samarbeide med, de svarer raskt, finner gode løsninger og leverer arbeid av jevnt høy kvalitet. Brannotatene deres er praktiske og enkle å bruke.',
     author: 'Daniel Hagelin',
     company: 'Hagelin Byggservice',
   },

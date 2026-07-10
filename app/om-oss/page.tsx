@@ -7,9 +7,9 @@ import AuroraRibbon from '@/components/AuroraRibbon'
 import WaveDivider from '@/components/WaveDivider'
 
 export const metadata: Metadata = {
-  title: 'Om Alta Brannkonsult | Sentralt godkjent brannrådgiver',
+  title: 'Om Brannkonsult AS | Sentralt godkjent brannrådgiver',
   description:
-    'Alta Brannkonsult er et sentralt godkjent brannrådgiverfirma med over 1200 prosjekter siden 2013. Vi tilbyr brannkonsept, brannprosjektering og branntilsyn i Alta og Finnmark.',
+    'Brannkonsult AS er et sentralt godkjent brannrådgiverfirma med over 1200 prosjekter siden 2013, og har en egen satsing i Alta og Nord-Norge. Vi tilbyr brannkonsept, brannprosjektering og branntilsyn i Alta og Finnmark.',
   alternates: { canonical: 'https://www.altabrannkonsult.no/om-oss' },
 }
 
@@ -44,7 +44,7 @@ export default function OmOssPage() {
             <span>Om oss</span>
           </div>
           <h1 className="hero-2 text-brand-white text-4xl lg:text-5xl font-black max-w-2xl">
-            Om Alta Brannkonsult
+            Om Brannkonsult AS
           </h1>
           <p className="hero-3 text-brand-white/70 text-lg mt-4 max-w-xl leading-relaxed">
             Sentralt godkjent brannrådgiverfirma med over 1200 prosjekter siden 2013.
@@ -60,7 +60,7 @@ export default function OmOssPage() {
             <ScrollReveal className="lg:w-1/2">
               <h2 className="text-brand-black text-3xl font-black mb-6">Vår bakgrunn</h2>
               <p className="text-brand-darkgray leading-relaxed mb-5">
-                Vi er et spesialisert brannprosjekteringsfirma med base i Alta, og vi tar oppdrag over hele landet. Vår virksomhet har sentral godkjenning for brannprosjektering i tiltaksklasse 1 og 2.
+                Vi er Brannkonsult AS, med en egen satsing i Alta og Nord-Norge, og vi tar oppdrag over hele landet. Vår virksomhet har sentral godkjenning for brannprosjektering i tiltaksklasse 1 og 2.
               </p>
               <p className="text-brand-darkgray leading-relaxed mb-5">
                 Siden oppstart i 2013 har vi vært involvert i over 1200 forskjellige brannprosjekter — fra små garasjer og enkle tilbygg til store leilighetsbygg og næringseiendommer.
@@ -88,7 +88,7 @@ export default function OmOssPage() {
               <div className="relative rounded-[30px] overflow-hidden h-80 lg:h-96">
                 <Image
                   src="/images/om-oss.jpg"
-                  alt="Alta Brannkonsult team"
+                  alt="Brannkonsult AS team"
                   fill
                   className="object-cover object-top"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -142,7 +142,7 @@ export default function OmOssPage() {
           <ScrollReveal className="max-w-3xl">
             <h2 className="text-brand-black text-3xl font-black mb-5">Nøytral rådgiver</h2>
             <p className="text-brand-darkgray leading-relaxed mb-4">
-              Alta Brannkonsult selger ingen produkter og tilbyr ingen håndverkertjenester. Vi er utelukkende en rådgivende part — det sikrer at rådet vi gir alltid er i ditt beste interesse, og ikke påvirket av salgsinteresser.
+              Brannkonsult AS selger ingen produkter og tilbyr ingen håndverkertjenester. Vi er utelukkende en rådgivende part — det sikrer at rådet vi gir alltid er i ditt beste interesse, og ikke påvirket av salgsinteresser.
             </p>
             <p className="text-brand-darkgray leading-relaxed">
               Mange av kundene våre er arkitekter og entreprenører som setter pris på at vi er lett tilgjengelige og raskt kan svare på spørsmål underveis i prosjektet — uten ekstra kostnad.
@@ -180,7 +180,7 @@ export default function OmOssPage() {
           <ScrollReveal className="max-w-3xl">
             <h2 className="text-brand-black text-3xl font-black mb-5">Dekningsområde</h2>
             <p className="text-brand-darkgray leading-relaxed">
-              Vi holder til i Alta og dekker hele Finnmark, inkludert Kautokeino, Hammerfest og Nordkapp-området. Vi tar også oppdrag i resten av Nord-Norge og over hele landet.
+              Brannkonsult AS har en egen satsing i Alta, og dekker herfra hele Finnmark, inkludert Kautokeino, Hammerfest og Nordkapp-området. Vi tar også oppdrag i resten av Nord-Norge og over hele landet.
             </p>
           </ScrollReveal>
         </div>

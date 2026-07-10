@@ -6,7 +6,7 @@ import AuroraRibbon from '@/components/AuroraRibbon'
 import WaveDivider from '@/components/WaveDivider'
 
 export const metadata: Metadata = {
-  title: 'Har du riktig brannslokkeapparat i boligen? | Alta Brannkonsult',
+  title: 'Har du riktig brannslokkeapparat i boligen? | Brannkonsult AS',
   description:
     'Vet du hvilken type brannslokker du trenger i hjemmet? Vi gjennomgår krav til brannslokking i boliger i Alta og forskjellen på pulver- og skumapparater.',
   alternates: { canonical: 'https://www.altabrannkonsult.no/artikler/brannslokker' },
@@ -106,7 +106,7 @@ export default function BrannslokkerPage() {
 
               <ScrollReveal>
                 <p className="leading-relaxed">
-                  Er du usikker på hva som gjelder for din bolig eller ditt bygg? Alta Brannkonsult er sentralt godkjente brannrådgivere og hjelper deg gjerne med brannkonsept, brannprosjektering og branntilsyn.{' '}
+                  Er du usikker på hva som gjelder for din bolig eller ditt bygg? Brannkonsult AS er sentralt godkjente brannrådgivere og hjelper deg gjerne med brannkonsept, brannprosjektering og branntilsyn.{' '}
                   <Link href="/kontakt-oss" className="text-brand-orange font-bold hover:underline">
                     Ta kontakt med oss her.
                   </Link>
