@@ -68,7 +68,7 @@ export default function KontaktOssPage() {
                       label: 'Postadresse',
                       value: 'Tromsø Brannkonsult AS\nGrønnegate 78/88\n9008 Tromsø',
                       href: null,
-                      note: 'Post administreres av vårt datterselskap Tromsø Brannkonsult AS. Vår lokale tilhørighet er i Alta, og vi satser i hele Nord-Norge.',
+                      note: 'Post administreres av Tromsø Brannkonsult AS. Vår lokale tilhørighet er i Alta, og vi satser i hele Nord-Norge.',
                     },
                     { icon: Clock, label: 'Åpningstider', value: 'Man–Fre 08:00–16:00', href: null },
                   ].map(({ icon: Icon, label, value, href, note }, i) => (
