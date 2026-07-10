@@ -39,7 +39,7 @@ const services = [
     href: '/branntilsyn',
   },
   {
-    iconImage: '/images/uavhengig-kontroll-brannkonsept.jpg',
+    iconImage: '/images/icon-uavhengig-kontroll.png',
     title: 'Uavhengig kontroll',
     description:
       'I mange byggeprosjekter er det krav om uavhengig kontroll av brannsikkerheten. Vi sikrer at brannkonseptet er i tråd med gjeldende forskrifter.',
