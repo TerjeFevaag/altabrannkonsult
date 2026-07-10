@@ -178,7 +178,7 @@ export default function BrannkonseptPage() {
           <div className="mt-6 flex flex-wrap gap-3">
             {[
               { href: '/brannprosjektering', label: 'Brannprosjektering' },
-              { href: '/branntilsyn', label: 'Branntilsyn' },
+              { href: '/branninspeksjon', label: 'Branninspeksjon' },
               { href: '/uavhengig-kontroll', label: 'Uavhengig kontroll' },
             ].map((link) => (
               <Link

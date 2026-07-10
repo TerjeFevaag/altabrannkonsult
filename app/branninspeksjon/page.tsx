@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Branntilsyn og branninspeksjon i Alta | Brannkonsult AS',
   description:
     'Har du fått pålegg etter branntilsyn i Alta? Brannkonsult AS tilbyr branninspeksjon, tilstandsrapport og handlingsplan. Sentralt godkjent. Kontakt oss i dag.',
-  alternates: { canonical: 'https://www.altabrannkonsult.no/branntilsyn' },
+  alternates: { canonical: 'https://www.altabrannkonsult.no/branninspeksjon' },
 }
 
 const faqItems = [
@@ -42,7 +42,7 @@ const faqItems = [
   },
 ]
 
-export default function BranntilsynPage() {
+export default function BranninspeksjonPage() {
   return (
     <>
       {/* Header */}
@@ -62,7 +62,7 @@ export default function BranntilsynPage() {
           <div className="hero-1 flex items-center gap-2 text-brand-orange text-sm mb-4">
             <Link href="/" className="hover:underline">Hjem</Link>
             <span>/</span>
-            <span>Branntilsyn</span>
+            <span>Branninspeksjon</span>
           </div>
           <h1 className="hero-2 text-brand-white text-4xl lg:text-5xl font-black max-w-2xl">
             Branntilsyn og branninspeksjon i Alta
