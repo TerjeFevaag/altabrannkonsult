@@ -216,8 +216,8 @@ export default function BrannkonseptPage() {
               <Link href="/kontakt-oss" className="inline-block bg-brand-white text-brand-black font-bold px-8 py-3.5 rounded-[10px] hover:opacity-90 transition-opacity">
                 Få tilbud nå
               </Link>
-              <a href="tel:+4700000000" className="inline-flex items-center gap-2 border-2 border-brand-white text-brand-white font-bold px-8 py-3.5 rounded-[10px] hover:bg-brand-white hover:text-brand-black transition-all duration-200">
-                <Phone size={16} /> +47 000 00 000
+              <a href="tel:+4740051437" className="inline-flex items-center gap-2 border-2 border-brand-white text-brand-white font-bold px-8 py-3.5 rounded-[10px] hover:bg-brand-white hover:text-brand-black transition-all duration-200">
+                <Phone size={16} /> +47 400 51 437
               </a>
             </div>
           </div>

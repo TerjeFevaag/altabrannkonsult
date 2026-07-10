@@ -40,7 +40,7 @@ export default function ContactForm() {
             id="telefon"
             name="telefon"
             className="w-full px-4 py-3 border border-brand-gray rounded-[10px] text-brand-black placeholder:text-brand-darkgray focus:outline-none focus:border-brand-orange transition-colors"
-            placeholder="+47 000 00 000"
+            placeholder="+47 400 51 437"
           />
         </div>
       </div>
