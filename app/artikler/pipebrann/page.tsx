@@ -4,17 +4,35 @@ import Link from 'next/link'
 import ScrollReveal from '@/components/ScrollReveal'
 import AuroraRibbon from '@/components/AuroraRibbon'
 import WaveDivider from '@/components/WaveDivider'
+import JsonLd from '@/components/JsonLd'
+import { breadcrumbJsonLd } from '@/lib/schema'
+
+const title = 'Forebygg pipebrann med enkle grep | Brannkonsult AS'
+const description =
+  'Lær hvordan du forebygger pipebrann. Regelmessig feieservice, riktig ved og god trekk er nøkkelen. Råd fra sentralt godkjente brannrådgivere i Alta.'
 
 export const metadata: Metadata = {
-  title: 'Forebygg pipebrann med enkle grep | Brannkonsult AS',
-  description:
-    'Lær hvordan du forebygger pipebrann. Regelmessig feieservice, riktig ved og god trekk er nøkkelen. Råd fra sentralt godkjente brannrådgivere i Alta.',
+  title,
+  description,
   alternates: { canonical: 'https://www.altabrannkonsult.no/artikler/pipebrann' },
+  openGraph: {
+    title,
+    description,
+    url: 'https://www.altabrannkonsult.no/artikler/pipebrann',
+    images: [{ url: '/images/article-pipebrann.jpg', width: 1200, height: 630, alt: 'Forebygg pipebrann' }],
+  },
 }
+
+const breadcrumb = breadcrumbJsonLd([
+  { name: 'Hjem', path: '/' },
+  { name: 'Forebygg pipebrann', path: '/artikler/pipebrann' },
+])
 
 export default function PipebrannPage() {
   return (
     <>
+      <JsonLd data={breadcrumb} />
+
       <section className="relative bg-brand-dark py-16 lg:py-20 min-h-[30vh] flex items-end overflow-hidden">
         <div className="opacity-20">
           <AuroraRibbon />
@@ -23,8 +41,6 @@ export default function PipebrannPage() {
         <div className="relative z-10 max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="hero-1 flex items-center gap-2 text-brand-orange text-sm mb-4">
             <Link href="/" className="hover:underline">Hjem</Link>
-            <span>/</span>
-            <Link href="/" className="hover:underline">Artikler</Link>
             <span>/</span>
             <span>Forebygg pipebrann</span>
           </div>

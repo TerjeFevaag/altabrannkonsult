@@ -4,17 +4,35 @@ import Link from 'next/link'
 import ScrollReveal from '@/components/ScrollReveal'
 import AuroraRibbon from '@/components/AuroraRibbon'
 import WaveDivider from '@/components/WaveDivider'
+import JsonLd from '@/components/JsonLd'
+import { breadcrumbJsonLd } from '@/lib/schema'
+
+const title = 'Har du riktig brannslokkeapparat i boligen? | Brannkonsult AS'
+const description =
+  'Vet du hvilken type brannslokker du trenger i hjemmet? Vi gjennomgår krav til brannslokking i boliger i Alta og forskjellen på pulver- og skumapparater.'
 
 export const metadata: Metadata = {
-  title: 'Har du riktig brannslokkeapparat i boligen? | Brannkonsult AS',
-  description:
-    'Vet du hvilken type brannslokker du trenger i hjemmet? Vi gjennomgår krav til brannslokking i boliger i Alta og forskjellen på pulver- og skumapparater.',
+  title,
+  description,
   alternates: { canonical: 'https://www.altabrannkonsult.no/artikler/brannslokker' },
+  openGraph: {
+    title,
+    description,
+    url: 'https://www.altabrannkonsult.no/artikler/brannslokker',
+    images: [{ url: '/images/article-brannslukker.jpg', width: 1200, height: 630, alt: 'Riktig brannslokker' }],
+  },
 }
+
+const breadcrumb = breadcrumbJsonLd([
+  { name: 'Hjem', path: '/' },
+  { name: 'Riktig brannslokker', path: '/artikler/brannslokker' },
+])
 
 export default function BrannslokkerPage() {
   return (
     <>
+      <JsonLd data={breadcrumb} />
+
       <section className="relative bg-brand-dark py-16 lg:py-20 min-h-[30vh] flex items-end overflow-hidden">
         <div className="opacity-20">
           <AuroraRibbon />
@@ -23,8 +41,6 @@ export default function BrannslokkerPage() {
         <div className="relative z-10 max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="hero-1 flex items-center gap-2 text-brand-orange text-sm mb-4">
             <Link href="/" className="hover:underline">Hjem</Link>
-            <span>/</span>
-            <Link href="/" className="hover:underline">Artikler</Link>
             <span>/</span>
             <span>Riktig brannslokker</span>
           </div>

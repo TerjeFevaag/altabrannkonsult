@@ -6,17 +6,35 @@ import ContactForm from '@/components/ContactForm'
 import ScrollReveal from '@/components/ScrollReveal'
 import AuroraRibbon from '@/components/AuroraRibbon'
 import WaveDivider from '@/components/WaveDivider'
+import JsonLd from '@/components/JsonLd'
+import { breadcrumbJsonLd } from '@/lib/schema'
+
+const title = 'Kontakt Brannkonsult AS | Få uforpliktende tilbud'
+const description =
+  'Kontakt Brannkonsult AS for uforpliktende tilbud på brannkonsept og brannprosjektering i Alta. Sentralt godkjent. Vi svarer innen 24 timer. Ring +47 400 51 437.'
 
 export const metadata: Metadata = {
-  title: 'Kontakt Brannkonsult AS | Få uforpliktende tilbud',
-  description:
-    'Kontakt Brannkonsult AS for uforpliktende tilbud på brannkonsept og brannprosjektering i Alta. Sentralt godkjent. Vi svarer innen 24 timer. Ring +47 400 51 437.',
+  title,
+  description,
   alternates: { canonical: 'https://www.altabrannkonsult.no/kontakt-oss' },
+  openGraph: {
+    title,
+    description,
+    url: 'https://www.altabrannkonsult.no/kontakt-oss',
+    images: [{ url: '/images/hero.jpg', width: 1200, height: 630, alt: 'Kontakt Brannkonsult AS' }],
+  },
 }
+
+const breadcrumb = breadcrumbJsonLd([
+  { name: 'Hjem', path: '/' },
+  { name: 'Kontakt oss', path: '/kontakt-oss' },
+])
 
 export default function KontaktOssPage() {
   return (
     <>
+      <JsonLd data={breadcrumb} />
+
       {/* Header */}
       <section className="relative bg-brand-dark py-24 lg:py-32 min-h-[40vh] flex items-end overflow-hidden">
         <Image

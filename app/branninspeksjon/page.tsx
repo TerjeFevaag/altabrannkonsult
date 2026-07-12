@@ -6,13 +6,29 @@ import FAQAccordion from '@/components/FAQAccordion'
 import ScrollReveal from '@/components/ScrollReveal'
 import AuroraRibbon from '@/components/AuroraRibbon'
 import WaveDivider from '@/components/WaveDivider'
+import JsonLd from '@/components/JsonLd'
+import { breadcrumbJsonLd, faqPageJsonLd } from '@/lib/schema'
+
+const title = 'Branntilsyn og branninspeksjon i Alta | Brannkonsult AS'
+const description =
+  'Har du fått pålegg etter branntilsyn i Alta? Brannkonsult AS tilbyr branninspeksjon, tilstandsrapport og handlingsplan. Sentralt godkjent. Kontakt oss i dag.'
 
 export const metadata: Metadata = {
-  title: 'Branntilsyn og branninspeksjon i Alta | Brannkonsult AS',
-  description:
-    'Har du fått pålegg etter branntilsyn i Alta? Brannkonsult AS tilbyr branninspeksjon, tilstandsrapport og handlingsplan. Sentralt godkjent. Kontakt oss i dag.',
+  title,
+  description,
   alternates: { canonical: 'https://www.altabrannkonsult.no/branninspeksjon' },
+  openGraph: {
+    title,
+    description,
+    url: 'https://www.altabrannkonsult.no/branninspeksjon',
+    images: [{ url: '/images/service-branntilsyn.jpg', width: 1200, height: 630, alt: 'Branninspeksjon i Alta' }],
+  },
 }
+
+const breadcrumb = breadcrumbJsonLd([
+  { name: 'Hjem', path: '/' },
+  { name: 'Branninspeksjon', path: '/branninspeksjon' },
+])
 
 const faqItems = [
   {
@@ -45,6 +61,8 @@ const faqItems = [
 export default function BranninspeksjonPage() {
   return (
     <>
+      <JsonLd data={breadcrumb} />
+      <JsonLd data={faqPageJsonLd(faqItems)} />
       {/* Header */}
       <section className="relative bg-brand-dark py-24 lg:py-32 min-h-[40vh] flex items-end overflow-hidden">
         <Image

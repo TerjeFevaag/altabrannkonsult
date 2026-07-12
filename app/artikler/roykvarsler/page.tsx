@@ -4,17 +4,35 @@ import Link from 'next/link'
 import ScrollReveal from '@/components/ScrollReveal'
 import AuroraRibbon from '@/components/AuroraRibbon'
 import WaveDivider from '@/components/WaveDivider'
+import JsonLd from '@/components/JsonLd'
+import { breadcrumbJsonLd } from '@/lib/schema'
+
+const title = 'Riktig røykvarsler redder liv | Brannkonsult AS'
+const description =
+  'Er du godt nok sikret hvis det oppstår brann om natten? Vi forklarer krav til røykvarslere i Alta, forskjellen på ionisasjons- og optiske varslere, og riktig plassering.'
 
 export const metadata: Metadata = {
-  title: 'Riktig røykvarsler redder liv | Brannkonsult AS',
-  description:
-    'Er du godt nok sikret hvis det oppstår brann om natten? Vi forklarer krav til røykvarslere i Alta, forskjellen på ionisasjons- og optiske varslere, og riktig plassering.',
+  title,
+  description,
   alternates: { canonical: 'https://www.altabrannkonsult.no/artikler/roykvarsler' },
+  openGraph: {
+    title,
+    description,
+    url: 'https://www.altabrannkonsult.no/artikler/roykvarsler',
+    images: [{ url: '/images/article-roykvarsler.jpg', width: 1200, height: 630, alt: 'Riktig røykvarsler' }],
+  },
 }
+
+const breadcrumb = breadcrumbJsonLd([
+  { name: 'Hjem', path: '/' },
+  { name: 'Riktig røykvarsler', path: '/artikler/roykvarsler' },
+])
 
 export default function RoykvarslerPage() {
   return (
     <>
+      <JsonLd data={breadcrumb} />
+
       <section className="relative bg-brand-dark py-16 lg:py-20 min-h-[30vh] flex items-end overflow-hidden">
         <div className="opacity-20">
           <AuroraRibbon />
@@ -23,8 +41,6 @@ export default function RoykvarslerPage() {
         <div className="relative z-10 max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="hero-1 flex items-center gap-2 text-brand-orange text-sm mb-4">
             <Link href="/" className="hover:underline">Hjem</Link>
-            <span>/</span>
-            <Link href="/" className="hover:underline">Artikler</Link>
             <span>/</span>
             <span>Riktig røykvarsler</span>
           </div>

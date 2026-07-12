@@ -5,13 +5,29 @@ import { CheckCircle, Phone, Mail, MapPin } from 'lucide-react'
 import ScrollReveal from '@/components/ScrollReveal'
 import AuroraRibbon from '@/components/AuroraRibbon'
 import WaveDivider from '@/components/WaveDivider'
+import JsonLd from '@/components/JsonLd'
+import { breadcrumbJsonLd } from '@/lib/schema'
+
+const title = 'Om Brannkonsult AS | Sentralt godkjent brannrådgiver'
+const description =
+  'Brannkonsult AS er et sentralt godkjent brannrådgiverfirma med over 1200 prosjekter siden 2013, og satser lokalt i Alta og Nord-Norge.'
 
 export const metadata: Metadata = {
-  title: 'Om Brannkonsult AS | Sentralt godkjent brannrådgiver',
-  description:
-    'Brannkonsult AS er et sentralt godkjent brannrådgiverfirma med over 1200 prosjekter siden 2013, og har en egen satsing i Alta og Nord-Norge. Vi tilbyr brannkonsept, brannprosjektering og branntilsyn i Alta og Finnmark.',
+  title,
+  description,
   alternates: { canonical: 'https://www.altabrannkonsult.no/om-oss' },
+  openGraph: {
+    title,
+    description,
+    url: 'https://www.altabrannkonsult.no/om-oss',
+    images: [{ url: '/images/om-oss.jpg', width: 1200, height: 630, alt: 'Brannkonsult AS' }],
+  },
 }
+
+const breadcrumb = breadcrumbJsonLd([
+  { name: 'Hjem', path: '/' },
+  { name: 'Om oss', path: '/om-oss' },
+])
 
 const process = [
   { step: '1', title: 'Kontakt oss', desc: 'Send forespørsel med informasjon om prosjektet.' },
@@ -24,6 +40,8 @@ const process = [
 export default function OmOssPage() {
   return (
     <>
+      <JsonLd data={breadcrumb} />
+
       {/* Header */}
       <section className="relative bg-brand-dark py-24 lg:py-32 min-h-[40vh] flex items-end overflow-hidden">
         <Image

@@ -8,12 +8,23 @@ import ReviewCard from '@/components/ReviewCard'
 import ScrollReveal from '@/components/ScrollReveal'
 import AuroraRibbon from '@/components/AuroraRibbon'
 import WaveDivider from '@/components/WaveDivider'
+import JsonLd from '@/components/JsonLd'
+import { faqPageJsonLd } from '@/lib/schema'
+
+const title = 'Brannrådgiver i Alta | Brannkonsult AS'
+const description =
+  'Brannkonsult AS tilbyr brannkonsept, brannprosjektering og branntilsyn i Alta og Finnmark. Sentralt godkjent foretak. Få uforpliktende tilbud i dag.'
 
 export const metadata: Metadata = {
-  title: 'Brannprosjektering i Alta | Brannkonsult AS',
-  description:
-    'Brannkonsult AS tilbyr brannkonsept, brannprosjektering og branntilsyn i Alta og Finnmark. Sentralt godkjent foretak. Få uforpliktende tilbud i dag.',
+  title,
+  description,
   alternates: { canonical: 'https://www.altabrannkonsult.no' },
+  openGraph: {
+    title,
+    description,
+    url: 'https://www.altabrannkonsult.no',
+    images: [{ url: '/images/hero.jpg', width: 1200, height: 630, alt: 'Brannkonsult AS' }],
+  },
 }
 
 const services = [
@@ -135,6 +146,8 @@ const articles = [
 export default function HomePage() {
   return (
     <>
+      <JsonLd data={faqPageJsonLd(faqItems)} />
+
       {/* ── HERO ── */}
       <section className="relative min-h-screen flex items-center bg-brand-dark">
         <Image
