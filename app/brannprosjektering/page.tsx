@@ -56,6 +56,11 @@ const faqItems = [
     answer:
       'Send oss situasjonsplan, byggesakstegninger og en kort prosjektbeskrivelse, så sender vi tilbud innen 24 timer.',
   },
+  {
+    question: 'Tilbyr dere brannprosjektering utenfor Alta?',
+    answer:
+      'Ja. Foruten Alta bistår vi kunder i hele Finnmark, blant annet Hammerfest, Kautokeino og Nordkapp, samt i Troms og Nordland. Vi dekker med andre ord hele Nord-Norge, og tar også oppdrag i resten av landet.',
+  },
 ]
 
 export default function BrannprosjekteringPage() {

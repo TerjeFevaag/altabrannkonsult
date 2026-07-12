@@ -56,6 +56,11 @@ const faqItems = [
     answer:
       'Eldre bygninger skal minst oppfylle et forsvarlig sikkerhetsnivå (ofte omtalt som BF85). Vi vurderer konkret hva som gjelder for ditt bygg.',
   },
+  {
+    question: 'Tilbyr dere branninspeksjon utenfor Alta?',
+    answer:
+      'Ja. Foruten Alta bistår vi kunder i hele Finnmark, blant annet Hammerfest, Kautokeino og Nordkapp, samt i Troms og Nordland. Vi dekker med andre ord hele Nord-Norge, og tar også oppdrag i resten av landet.',
+  },
 ]
 
 export default function BranninspeksjonPage() {

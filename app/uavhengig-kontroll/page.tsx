@@ -51,6 +51,11 @@ const faqItems = [
     answer:
       'Ja, vi utfører uavhengig kontroll som en nøytral tredjepart, uavhengig av hvem som har utarbeidet det opprinnelige brannkonseptet.',
   },
+  {
+    question: 'Tilbyr dere uavhengig kontroll utenfor Alta?',
+    answer:
+      'Ja. Foruten Alta bistår vi kunder i hele Finnmark, blant annet Hammerfest, Kautokeino og Nordkapp, samt i Troms og Nordland. Vi dekker med andre ord hele Nord-Norge, og tar også oppdrag i resten av landet.',
+  },
 ]
 
 export default function UavhengigKontrollPage() {

@@ -61,6 +61,11 @@ const faqItems = [
     answer:
       'Leveringstid avhenger av prosjektets omfang og vår arbeidsbelastning. For de fleste prosjekter leverer vi innen 5–10 virkedager etter mottatt bestilling og komplett underlag. Har du tidsfrist, oppgi dette i forespørselen.',
   },
+  {
+    question: 'Tilbyr dere brannkonsept utenfor Alta?',
+    answer:
+      'Ja. Foruten Alta bistår vi kunder i hele Finnmark, blant annet Hammerfest, Kautokeino og Nordkapp, samt i Troms og Nordland. Vi dekker med andre ord hele Nord-Norge, og tar også oppdrag i resten av landet.',
+  },
 ]
 
 export default function BrannkonseptPage() {

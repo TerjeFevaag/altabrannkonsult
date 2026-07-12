@@ -115,7 +115,7 @@ const faqItems = [
   {
     question: 'Tar dere oppdrag utenfor Alta?',
     answer:
-      'Vi hjelper kunder i Alta, Finnmark og hele Nord-Norge, og tar oppdrag over hele landet.',
+      'Ja. Foruten Alta bistår vi kunder i hele Finnmark, blant annet Hammerfest, Kautokeino og Nordkapp, samt i Troms og Nordland. Vi dekker med andre ord hele Nord-Norge, og tar også oppdrag i resten av landet.',
   },
 ]
 
