@@ -175,7 +175,7 @@ export default function HomePage() {
             Alta · Finnmark
           </p>
           <h1 className="hero-2 text-brand-white text-4xl lg:text-5xl xl:text-6xl font-black leading-tight mb-6 max-w-2xl">
-            Brannprosjektering under nordlyshimmelen
+            Brannprosjektering av uavhengig rådgiver
           </h1>
           <p className="hero-3 text-brand-white/70 text-base lg:text-lg leading-relaxed mb-8 max-w-xl">
             Vi hjelper deg med brannprosjektering i Alta og Finnmark. Sentralt godkjent foretak
