@@ -68,26 +68,54 @@ const stats = [
 const reviews = [
   {
     quote:
-      'Jeg fikk hjelp med en ny boenhet. Rask tilbakemelding og grundig rapport. Anbefaler andre å bruke Brannkonsult AS!',
+      'Brannkonsult utarbeidet et ryddig og svært grundig dokument som ble til god nytte under oppføring av et tilbygg i et bevaringsverdig område i Fredrikstad. Det ga den nødvendige tryggheten vedr brannforskrifter for meg som byggherre og for de ansvarlige for bygget. I tillegg er jeg blitt møtt med stor imøtekommenhet og gode svar ved flere telefonhenvendelser både før og etter at jeg mottok dokumentet. Jeg gir mine beste anbefalinger.',
+    author: 'Anne-Grete Halmrast',
+    date: '20 jun 2023',
+  },
+  {
+    quote:
+      'Rask og god kommunikasjon. Leverte raskt det vi trengte av dokumentasjon til en fornuftig pris. Ble ikke tilbudt en dyr dokumentasjonspakke, som var overdimensjonert i henhold til vårt prosjekt. Veldig fornøyd!',
+    author: 'Heidi Spinnangr',
+    date: '02 sep 2024',
+  },
+  {
+    quote:
+      'Fikk bistand med brannprosjektering ved oppføring av to stk. vertikaldelte tomannsboliger i Lørenskog kommune. Godt fornøyd med rapport og resultat, og tar kontakt med dem ved neste prosjekt som vil være aktuelt!',
+    author: 'Jon Steiland',
+    company: 'ASC Eiendomsutvikling AS',
+    date: '04 aug 2023',
+  },
+  {
+    quote:
+      'På spørsmål om brannkonsept, og ansvarsrett for fagområdet, fikk vi raskt og profesjonelt svar. Hyggelig, ryddig og konstruktiv oppfølging.',
+    author: 'Sivilarkitekt Sverre Krefting',
+    date: '30 apr 2026',
+  },
+  {
+    quote:
+      'Rask og god brannprosjektering. Har ingenting å utsette på hjelpen jeg fikk til mitt boligprosjekt i Tromsø.',
+    author: 'Tony Berntsen',
+    date: '29 mai 2024',
+  },
+  {
+    quote:
+      'Vi brukte Brannkonsult AS i forbindelse med et tilbygg på en barnehage. Vi fikk rask tilbakemelding på vår forespørsel, med veiledning og pris. Etter bestilling ble tjenesten levert i henhold til tilbud og leveringstid. Enkelt og greit godt fornøyd med hele prosessen.',
+    author: 'Håvard Musdalslien',
+    company: 'Contre AS',
+    date: '19 aug 2024',
+  },
+  {
+    quote:
+      'Jeg fikk hjelp med en ny boenhet i Bergen Sentrum. Rask tilbakemelding og grundig rapport. Anbefaler andre å bruke Brannkonsult AS!',
     author: 'Jan-David Antonsen',
     company: 'Anton Arkitekt AS',
+    date: '11 mai 2026',
   },
   {
     quote:
-      'Raskt svar, relevant og grundig rapport, kommunen likte måten det var gjort på. Ny oppdatert rapport innen kort tid. Alt til bra priser.',
+      'Raskt svar, relevant og grundig rapport, kommunen likte måten det var gjort på. Måtte endre noe i rapporten pga ny planløsning. Ny oppdatert rapport innen kort tid. Alt til bra priser.',
     author: 'Vegard Hals',
-  },
-  {
-    quote:
-      'Brannkonsult AS er lette å samarbeide med, de svarer raskt, finner gode løsninger og leverer arbeid av jevnt høy kvalitet. Brannotatene deres er praktiske og enkle å bruke.',
-    author: 'Daniel Hagelin',
-    company: 'Hagelin Byggservice',
-  },
-  {
-    quote:
-      'Brannkonsult AS er faglig dyktige, ryddige og løsningsorienterte. Det er viktig for oss som arkitekter og for våre kunder.',
-    author: 'Jon Cederbrand',
-    company: 'Jon Cederbrand Arkitektur AS',
+    date: '03 mar 2026',
   },
 ]
 
@@ -256,7 +284,7 @@ export default function HomePage() {
             <p className="font-accent text-brand-orange text-xl mb-2">Kundene våre sier</p>
             <h2 className="text-brand-black text-3xl lg:text-4xl font-black">Hva sier kundene?</h2>
           </ScrollReveal>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {reviews.map((r, i) => (
               <ScrollReveal key={i} delay={i * 80}>
                 <ReviewCard {...r} />
