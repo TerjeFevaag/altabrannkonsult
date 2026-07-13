@@ -87,12 +87,6 @@ const reviews = [
   },
   {
     quote:
-      'På spørsmål om brannkonsept, og ansvarsrett for fagområdet, fikk vi raskt og profesjonelt svar. Hyggelig, ryddig og konstruktiv oppfølging.',
-    author: 'Sivilarkitekt Sverre Krefting',
-    date: '30 apr 2026',
-  },
-  {
-    quote:
       'Rask og god brannprosjektering. Har ingenting å utsette på hjelpen jeg fikk til mitt boligprosjekt i Tromsø.',
     author: 'Tony Berntsen',
     date: '29 mai 2024',
@@ -110,24 +104,6 @@ const reviews = [
     author: 'Jan-David Antonsen',
     company: 'Anton Arkitekt AS',
     date: '11 mai 2026',
-  },
-  {
-    quote:
-      'Raskt svar, relevant og grundig rapport, kommunen likte måten det var gjort på. Måtte endre noe i rapporten pga ny planløsning. Ny oppdatert rapport innen kort tid. Alt til bra priser.',
-    author: 'Vegard Hals',
-    date: '03 mar 2026',
-  },
-  {
-    quote:
-      'Brannkonsult AS er lette å samarbeide med, de svarer raskt, finner gode løsninger og leverer arbeid av jevnt høy kvalitet. Brannotatene deres er praktiske og enkle å bruke.',
-    author: 'Daniel Hagelin',
-    company: 'Hagelin Byggservice',
-  },
-  {
-    quote:
-      'Brannkonsult AS er faglig dyktige, ryddige og løsningsorienterte. Det er viktig for oss som arkitekter og for våre kunder.',
-    author: 'Jon Cederbrand',
-    company: 'Jon Cederbrand Arkitektur AS',
   },
 ]
 
