@@ -117,6 +117,18 @@ const reviews = [
     author: 'Vegard Hals',
     date: '03 mar 2026',
   },
+  {
+    quote:
+      'Brannkonsult AS er lette å samarbeide med, de svarer raskt, finner gode løsninger og leverer arbeid av jevnt høy kvalitet. Brannotatene deres er praktiske og enkle å bruke.',
+    author: 'Daniel Hagelin',
+    company: 'Hagelin Byggservice',
+  },
+  {
+    quote:
+      'Brannkonsult AS er faglig dyktige, ryddige og løsningsorienterte. Det er viktig for oss som arkitekter og for våre kunder.',
+    author: 'Jon Cederbrand',
+    company: 'Jon Cederbrand Arkitektur AS',
+  },
 ]
 
 const faqItems = [
