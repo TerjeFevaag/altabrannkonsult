@@ -59,7 +59,7 @@ const faqItems = [
   {
     question: 'Tilbyr dere branninspeksjon utenfor Alta?',
     answer:
-      'Ja. Foruten Alta bistår vi kunder i hele Finnmark, blant annet Hammerfest, Kautokeino og Nordkapp, samt i Troms og Nordland. Vi dekker med andre ord hele Nord-Norge, og tar også oppdrag i resten av landet.',
+      'Ja. Foruten Alta bistår vi kunder i hele Finnmark — fra Hammerfest, Kirkenes, Vadsø og Vardø, via Kautokeino, Karasjok, Tana, Nesseby og Porsanger i innlandet, til Nordkapp, Måsøy, Loppa, Hasvik, Gamvik, Lebesby, Berlevåg og Båtsfjord langs kysten — samt i Troms og Nordland. Vi dekker med andre ord hele Nord-Norge, og tar også oppdrag i resten av landet.',
   },
 ]
 
