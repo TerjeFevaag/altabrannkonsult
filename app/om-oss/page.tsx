@@ -78,7 +78,7 @@ export default function OmOssPage() {
             <ScrollReveal className="lg:w-1/2">
               <h2 className="text-brand-black text-3xl font-black mb-6">Vår bakgrunn</h2>
               <p className="text-brand-darkgray leading-relaxed mb-5">
-                Vi er Brannkonsult AS, med en egen satsing i Alta og Nord-Norge, og vi tar oppdrag over hele landet. Vår virksomhet har sentral godkjenning for brannprosjektering i tiltaksklasse 1 og 2.
+                Vi er et spesialisert brannprosjekteringsfirma representert i Alta, og vi tar oppdrag over hele landet. Vår virksomhet har sentral godkjenning for brannprosjektering i tiltaksklasse 1 og 2.
               </p>
               <p className="text-brand-darkgray leading-relaxed mb-5">
                 Siden oppstart i 2013 har vi vært involvert i over 1200 forskjellige brannprosjekter — fra små garasjer og enkle tilbygg til store leilighetsbygg og næringseiendommer.
