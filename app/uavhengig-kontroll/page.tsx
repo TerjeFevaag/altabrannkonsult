@@ -84,10 +84,10 @@ export default function UavhengigKontrollPage() {
             <span>Uavhengig kontroll</span>
           </div>
           <h1 className="hero-2 text-brand-white text-4xl lg:text-5xl font-black max-w-2xl">
-            Uavhengig kontroll av brannkonsept i Alta
+            Uavhengig kontroll av brannkonseptet ditt
           </h1>
           <p className="hero-3 text-brand-white/70 text-lg mt-4 max-w-xl leading-relaxed">
-            Vi sikrer at brannkonseptet er i tråd med gjeldende forskrifter og at prosjekteringen holder nødvendig kvalitet.
+            Vi sikrer at brannkonseptet er i tråd med gjeldende forskrifter og at prosjekteringen holder nødvendig kvalitet — for byggeprosjekter i Alta og resten av Finnmark.
           </p>
         </div>
         <WaveDivider fill="var(--color-brand-white)" />

@@ -213,6 +213,34 @@ export default function HomePage() {
         <WaveDivider fill="var(--color-brand-white)" />
       </section>
 
+      {/* ── LOKALKUNNSKAP ── */}
+      <section className="py-16 lg:py-24 bg-brand-lightgray">
+        <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal className="max-w-3xl mb-14">
+            <p className="font-accent text-brand-orange text-xl mb-2">Hvorfor lokalkunnskap betyr noe</p>
+            <h2 className="text-brand-black text-3xl lg:text-4xl font-black mb-6">
+              Bygningsmassen i Finnmark er ikke som i resten av landet
+            </h2>
+            <p className="text-brand-darkgray leading-relaxed mb-4">
+              Store deler av det som står i fylket i dag er yngre enn man skulle tro. Da tyske styrker trakk seg tilbake høsten 1944, ble nesten alt som sto igjen i Finnmark og Nord-Troms brent ned — og gjenreist i et tempo som sjelden etterlot seg fullstendig byggedokumentasjon. «Gammelt hus» her betyr som regel et etterkrigsbygg fra 1945–70, ikke en fredet trebygning fra 1800-tallet, og det gjør branntekniske vurderinger av eldre bygg til en egen øvelse.
+            </p>
+            <p className="text-brand-darkgray leading-relaxed">
+              Alta kommune strekker seg dessuten over et stort areal, fra sentrum og Bossekop til bygder langs fjorden og innover mot Finnmarksvidda, med korte byggesesonger og lange vintermørker som stiller andre krav til fremdrift enn lenger sør. Vi har prosjektert brannsikkerhet i begge ytterpunkter — fra eneboliger i spredt bebyggelse til leilighetsbygg i sentrum.
+            </p>
+          </ScrollReveal>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            {stats.map((stat, i) => (
+              <ScrollReveal key={i} delay={i * 80} variant="scale" className="text-center">
+                <div className="text-brand-orange font-black text-3xl lg:text-4xl mb-2">
+                  {stat.number}
+                </div>
+                <div className="text-brand-darkgray text-sm lg:text-base">{stat.label}</div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── SERVICES ── */}
       <section className="py-16 lg:py-24 bg-brand-white">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -230,33 +258,6 @@ export default function HomePage() {
                 className="min-w-[260px] snap-start lg:min-w-0"
               >
                 <ServiceCard {...service} />
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── ABOUT / TRUST STRIP ── */}
-      <section className="py-16 lg:py-24 bg-brand-lightgray">
-        <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollReveal className="text-center max-w-2xl mx-auto mb-14">
-            <p className="font-accent text-brand-orange text-xl mb-2">Lokalkunnskap fra Finnmarksvidda til Hjemmeluft</p>
-            <h2 className="text-brand-black text-3xl lg:text-4xl font-black mb-4">
-              Trygg brannrådgivning i arktisk klima
-            </h2>
-            <p className="text-brand-darkgray leading-relaxed">
-              Fra de eldgamle helleristningene i Hjemmeluft til moderne boligfelt langs
-              Finnmarksvidda — vi kjenner utfordringene et arktisk klima med lange, mørke
-              vintre og lyse sommernetter stiller til brannsikkerhet.
-            </p>
-          </ScrollReveal>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            {stats.map((stat, i) => (
-              <ScrollReveal key={i} delay={i * 80} variant="scale" className="text-center">
-                <div className="text-brand-orange font-black text-3xl lg:text-4xl mb-2">
-                  {stat.number}
-                </div>
-                <div className="text-brand-darkgray text-sm lg:text-base">{stat.label}</div>
               </ScrollReveal>
             ))}
           </div>

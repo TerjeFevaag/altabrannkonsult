@@ -89,7 +89,7 @@ export default function BrannprosjekteringPage() {
             <span>Brannprosjektering</span>
           </div>
           <h1 className="hero-2 text-brand-white text-4xl lg:text-5xl font-black max-w-2xl">
-            Brannprosjektering i Alta
+            Brannprosjektering som følger byggesaken din
           </h1>
           <p className="hero-3 text-brand-white/70 text-lg mt-4 max-w-xl leading-relaxed">
             Vi sørger for at bygget ditt i Alta oppfyller alle krav i plan- og bygningsloven og brann- og eksplosjonsvernloven — til fast pris.

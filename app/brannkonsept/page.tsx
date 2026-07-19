@@ -94,10 +94,10 @@ export default function BrannkonseptPage() {
             <span>Brannkonsept</span>
           </div>
           <h1 className="hero-2 text-brand-white text-4xl lg:text-5xl font-black max-w-2xl">
-            Brannkonsept i Alta
+            Brannkonsept som holder i byggesaken
           </h1>
           <p className="hero-3 text-brand-white/70 text-lg mt-4 max-w-xl leading-relaxed">
-            Vi utarbeider helhetlige brannkonsept for byggesaker i Alta og Finnmark. Fastpris, rask levering og sentral godkjenning.
+            Vi utarbeider helhetlige brannkonsept for byggesaker i Alta og resten av Finnmark. Fastpris, rask levering og sentral godkjenning.
           </p>
         </div>
         <WaveDivider fill="var(--color-brand-white)" />
@@ -159,8 +159,8 @@ export default function BrannkonseptPage() {
             <div className="bg-brand-lightgray rounded-[20px] p-6 mb-8">
               <h3 className="font-bold text-brand-black mb-3">Eksempler på risikoklasser:</h3>
               <ul className="space-y-2 text-brand-darkgray text-sm">
-                <li><strong>RKL 1:</strong> Garasjer, lager (ingen personopphold)</li>
-                <li><strong>RKL 2:</strong> Boliger med evakueringsmulighet fra egen enhet</li>
+                <li><strong>RKL 1:</strong> Garasjer, naust og lager (ingen personopphold)</li>
+                <li><strong>RKL 2:</strong> Boliger og hytter med evakueringsmulighet fra egen enhet</li>
                 <li><strong>RKL 4:</strong> Kontorbygg, undervisningsbygg</li>
                 <li><strong>RKL 5:</strong> Hoteller, sykehjem (sover/overnatting)</li>
                 <li><strong>RKL 6:</strong> Sykehus (svekkede beboere)</li>
