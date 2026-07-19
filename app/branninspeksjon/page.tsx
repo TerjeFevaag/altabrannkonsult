@@ -47,14 +47,14 @@ const faqItems = [
       'Brannvesenet kan gi pålegg om utbedring innen en frist. Vi hjelper deg med å kartlegge avvik og utarbeide en plan for å lukke dem.',
   },
   {
-    question: 'Hva koster en branninspeksjon?',
+    question: 'Hva må jeg regne med at en branninspeksjon koster?',
     answer:
       'Prisen avhenger av byggets størrelse og kompleksitet. Ta kontakt for et uforpliktende tilbud tilpasset ditt bygg.',
   },
   {
     question: 'Gjelder oppgraderingskravet for alle eldre bygninger?',
     answer:
-      'Eldre bygninger skal minst oppfylle et forsvarlig sikkerhetsnivå (ofte omtalt som BF85). Vi vurderer konkret hva som gjelder for ditt bygg.',
+      'Eldre bygninger skal minst oppfylle et forsvarlig sikkerhetsnivå (ofte omtalt som BF85). Dette er særlig aktuelt i Finnmark, der mye av bygningsmassen stammer fra gjenreisningen etter krigen og sjelden er dokumentert etter dagens krav. Vi vurderer konkret hva som gjelder for ditt bygg.',
   },
   {
     question: 'Tilbyr dere branninspeksjon utenfor Alta?',

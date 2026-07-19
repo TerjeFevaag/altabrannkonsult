@@ -30,8 +30,8 @@ const breadcrumb = breadcrumbJsonLd([
 ])
 
 const process = [
-  { step: '1', title: 'Kontakt oss', desc: 'Send forespørsel med informasjon om prosjektet.' },
-  { step: '2', title: 'Vi sender tilbud', desc: 'Du mottar fastpristilbud innen 24 timer.' },
+  { step: '1', title: 'Send oss prosjektet', desc: 'Adresse, tegninger og en kort beskrivelse av hva du skal gjøre.' },
+  { step: '2', title: 'Du får et fastprisforslag', desc: 'Vi regner ut pris basert på omfang, og svarer skriftlig innen 24 timer.' },
   { step: '3', title: 'Du aksepterer', desc: 'Bekreft oppdraget — vi starter arbeidet.' },
   { step: '4', title: 'Vi prosjekterer', desc: 'Erfarne brannrådgivere utarbeider dokumentasjonen.' },
   { step: '5', title: 'Dokumentasjon levert', desc: 'Komplett leveranse klar for kommunen.' },
@@ -84,7 +84,7 @@ export default function OmOssPage() {
                 Siden oppstart i 2013 har vi vært involvert i over 1200 forskjellige brannprosjekter — fra små garasjer og enkle tilbygg til store leilighetsbygg og næringseiendommer.
               </p>
               <p className="text-brand-darkgray leading-relaxed mb-8">
-                Alta er kjent for sine eldgamle helleristninger i Hjemmeluft — oppført på UNESCOs verdensarvliste — og for nordlyset som lyser opp himmelen store deler av året. Byen har vokst raskt de siste tiårene, med en blanding av moderne boligfelt, næringsbygg og spredt bebyggelse tilpasset et arktisk klima med lange, mørke vintre og lyse sommernetter. Vi leverer brannkonsept og brannprosjektering til private, arkitekter og utbyggere i hele Alta og Finnmark.
+                Alta er kjent for sine eldgamle helleristninger i Hjemmeluft — oppført på UNESCOs verdensarvliste — og for nordlyset som lyser opp himmelen store deler av året. Som i resten av Finnmark ble mesteparten av den eldre bygningsmassen brent ned under den tyske tilbaketrekningen høsten 1944, og gjenreist i et forrykende tempo i årene etterpå. Det betyr at et «gammelt hus» i Alta som regel er et etterkrigsbygg som sjelden er dokumentert etter dagens branntekniske krav — noe vi støter på jevnlig ved ombygging, bruksendring og salg. I tillegg vokser byen med moderne boligfelt, næringsbygg og spredt bebyggelse tilpasset et arktisk klima med lange, mørke vintre og lyse sommernetter. Vi leverer brannkonsept og brannprosjektering til private, arkitekter og utbyggere i hele Alta og Finnmark.
               </p>
 
               <div className="grid grid-cols-2 gap-4">
@@ -160,7 +160,7 @@ export default function OmOssPage() {
           <ScrollReveal className="max-w-3xl">
             <h2 className="text-brand-black text-3xl font-black mb-5">Nøytral rådgiver</h2>
             <p className="text-brand-darkgray leading-relaxed mb-4">
-              Brannkonsult AS selger ingen produkter og tilbyr ingen håndverkertjenester. Vi er utelukkende en rådgivende part — det sikrer at rådet vi gir alltid er i ditt beste interesse, og ikke påvirket av salgsinteresser.
+              Vi selger verken byggevarer eller håndverkertjenester, og har ingen kommersielle bindinger til leverandører eller entreprenører. Anbefalingene vi gir er utelukkende faglig begrunnet — ikke styrt av hva vi eventuelt ville tjent på å selge deg i tillegg.
             </p>
             <p className="text-brand-darkgray leading-relaxed">
               Mange av kundene våre er arkitekter og entreprenører som setter pris på at vi er lett tilgjengelige og raskt kan svare på spørsmål underveis i prosjektet — uten ekstra kostnad.

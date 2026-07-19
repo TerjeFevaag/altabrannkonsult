@@ -42,7 +42,7 @@ const faqItems = [
       'Etter SAK10 kreves uavhengig kontroll når brannprosjekteringen er i tiltaksklasse 2 eller høyere.',
   },
   {
-    question: 'Hva koster uavhengig kontroll?',
+    question: 'Hva ligger uavhengig kontroll an til å koste?',
     answer:
       'Prisen avhenger av prosjektets omfang og kompleksitet. Send oss underlaget ditt for et nøyaktig tilbud.',
   },

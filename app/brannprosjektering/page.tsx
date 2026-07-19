@@ -32,19 +32,19 @@ const breadcrumb = breadcrumbJsonLd([
 
 const faqItems = [
   {
-    question: 'Hva koster brannprosjektering i Alta?',
+    question: 'Hva er prisen for brannprosjektering?',
     answer:
-      'Prisen varierer med omfang og kompleksitet. Brannprosjektering i tiltaksklasse 2 starter fra ca. 15 000 kr ekskl. mva. Vi tilbyr alltid fastpris.',
+      'Prisen avhenger av omfang og kompleksitet i prosjektet. I tiltaksklasse 2 starter brannprosjektering normalt fra ca. 15 000 kr ekskl. mva. Du får alltid fastpris i tilbudet.',
   },
   {
-    question: 'Trenger jeg brannprosjektering for tilbygg eller bruksendring?',
+    question: 'Krever alle tilbygg og bruksendringer brannprosjektering?',
     answer:
-      'Ja, de fleste tilbygg, påbygg og bruksendringer krever brannteknisk prosjektering. Ta kontakt for en gratis vurdering av ditt prosjekt.',
+      'De aller fleste gjør det, ja — tilbygg, påbygg, bruksendring og etablering av ny boenhet utløser som regel krav til brannteknisk dokumentasjon. Send oss noen ord om prosjektet, så gir vi deg en gratis vurdering.',
   },
   {
-    question: 'Er befaring nødvendig?',
+    question: 'Trenger dere å befare bygget?',
     answer:
-      'For nybygg og enklere saker er det sjelden nødvendig. Med gode tegninger og kartdata kan vi ofte prosjektere uten fysisk befaring.',
+      'For nybygg og enklere saker er det sjelden nødvendig — gode tegninger og kartdata er som regel tilstrekkelig. Ved eldre eller mer kompliserte bygg avtaler vi befaring ved behov.',
   },
   {
     question: 'Tilbyr dere håndverkertjenester?',
@@ -52,9 +52,9 @@ const faqItems = [
       'Nei — vi er en nøytral rådgiver og selger ingen produkter eller håndverkertjenester.',
   },
   {
-    question: 'Hva trengs for å få et pristilbud?',
+    question: 'Hva trenger dere fra meg for å regne ut et tilbud?',
     answer:
-      'Send oss situasjonsplan, byggesakstegninger og en kort prosjektbeskrivelse, så sender vi tilbud innen 24 timer.',
+      'Situasjonsplan, byggesakstegninger og en kort beskrivelse av hva du skal gjøre. Send det over, så har du fastprisen i innboksen innen 24 timer.',
   },
   {
     question: 'Tilbyr dere brannprosjektering utenfor Alta?',
@@ -103,7 +103,7 @@ export default function BrannprosjekteringPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-              Brannprosjektering betyr skriftlig planlegging av nødvendig brannsikring i og rundt bygningen. Vi sørger for at ditt bygg i Alta oppfyller alle krav i plan- og bygningsloven og brann- og eksplosjonsvernloven — til fast pris.
+              Brannprosjektering er den skriftlige planleggingen av nødvendig brannsikring i og rundt bygget. Vi sørger for at prosjektet ditt oppfyller kravene i plan- og bygningsloven og brann- og eksplosjonsvernloven, uansett om det ligger i Alta sentrum eller lenger ut i distriktet — til fast pris.
             </p>
           </ScrollReveal>
 

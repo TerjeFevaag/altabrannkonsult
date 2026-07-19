@@ -32,37 +32,37 @@ const services = [
     iconImage: '/images/icon-brannkonsept.gif',
     title: 'Brannkonsept',
     description:
-      'Kommunen krever et brannkonsept ved de fleste byggesaker. Vi utarbeider helhetlige brannkonsept som ivaretar brannsikkerheten i ditt prosjekt — fra garasjer til leilighetsbygg.',
+      'Skal du bygge, bygge på eller endre bruken av et bygg? Kommunen krever normalt et brannkonsept før byggesøknaden kan godkjennes — vi setter opp dokumentasjonen som viser at brannsikkerheten er ivaretatt.',
     href: '/brannkonsept',
   },
   {
     iconImage: '/images/icon-brannprosjektering.gif',
     title: 'Brannprosjektering',
     description:
-      'Vi sørger for at bygget ditt oppfyller alle krav til brannsikkerhet, og finner praktiske løsninger som sparer både tid og kostnader. Fast pris der det er mulig.',
+      'Vi finner løsninger som oppfyller brannkravene uten å gjøre byggeprosjektet mer komplisert eller kostbart enn nødvendig — med fastpris du kjenner før arbeidet starter.',
     href: '/brannprosjektering',
   },
   {
     iconImage: '/images/icon-branntilsyn.png',
     title: 'Branninspeksjon',
     description:
-      'Har du fått pålegg etter branntilsyn, eller ønsker du en grundig gjennomgang av byggets brannsikkerhet? Vi inspiserer hele bygningen og utarbeider tilstandsrapport.',
+      'Har brannvesenet gitt pålegg, eller lurer du på hvor bygget faktisk står brannteknisk? Vi kartlegger avvik og leverer en tilstandsrapport med konkrete tiltak.',
     href: '/branninspeksjon',
   },
   {
     iconImage: '/images/icon-uavhengig-kontroll.png',
     title: 'Uavhengig kontroll',
     description:
-      'I mange byggeprosjekter er det krav om uavhengig kontroll av brannsikkerheten. Vi sikrer at brannkonseptet er i tråd med gjeldende forskrifter.',
+      'Krever prosjektet ditt uavhengig kontroll av brannkonseptet? Vi kontrollerer at dokumentasjonen holder mål opp mot forskriftene — uavhengig av hvem som prosjekterte den.',
     href: '/uavhengig-kontroll',
   },
 ]
 
 const stats = [
-  { number: '1200+', label: 'Prosjekter gjennomført' },
-  { number: 'TKL 1+2', label: 'Sentralt godkjent' },
-  { number: 'Fast pris', label: 'Der det er mulig' },
-  { number: 'Hele landet', label: 'Vi tar oppdrag overalt' },
+  { number: '1200+', label: 'Prosjekter siden 2013' },
+  { number: 'TKL 1+2', label: 'Godkjenning fra DiBK' },
+  { number: 'Fastpris', label: 'Ingen timepris' },
+  { number: '5–10 dager', label: 'Vanlig leveringstid' },
 ]
 
 const reviews = [
@@ -73,8 +73,8 @@ const reviews = [
   },
   {
     quote:
-      'Rask og god kommunikasjon. Leverte raskt det vi trengte av dokumentasjon til en fornuftig pris. Ble ikke tilbudt en dyr dokumentasjonspakke, som var overdimensjonert i henhold til vårt prosjekt. Veldig fornøyd!',
-    author: 'Heidi Spinnangr',
+      'Raskt svar og god hjelp. Meget godt gjennomført brannkonsept som var greit å skjønne. Gode tips og forslag til endringer underveis. Meget fornøyd!',
+    author: 'Sandra Roksøy',
   },
   {
     quote:
@@ -95,32 +95,36 @@ const reviews = [
   },
   {
     quote:
-      'Jeg fikk hjelp med en ny boenhet i Bergen Sentrum. Rask tilbakemelding og grundig rapport. Anbefaler andre å bruke Brannkonsult AS!',
-    author: 'Jan-David Antonsen',
-    company: 'Anton Arkitekt AS',
+      'Thomas har ekspertise og gir en trygghet. Han forstod behovet vårt og har dekket det på en effektiv måte. Veldig fornøyd så langt!',
+    author: 'Ibrahim Temel',
   },
 ]
 
 const faqItems = [
   {
-    question: 'Hva koster brannprosjektering i Alta?',
+    question: 'Hva må jeg regne med å betale for brannprosjektering?',
     answer:
-      'Prisen varierer etter omfang og kompleksitet. Et brannkonsept i tiltaksklasse 2 starter hos oss fra ca. 15 000 kr ekskl. mva., inkludert branntegninger. Vi tilbyr alltid fastpris.',
+      'Prisen avhenger av prosjektets omfang. Et brannkonsept i tiltaksklasse 2 starter normalt fra 15 000 kr eks. mva., inkludert branntegninger — og du får alltid fastpris før vi setter i gang.',
   },
   {
-    question: 'Trenger jeg brannprosjektering for mitt prosjekt?',
+    question: 'Må jeg ha brannprosjektering for prosjektet mitt?',
     answer:
-      'De fleste byggesaker krever brannprosjektering — tilbygg, bruksendring, ny boenhet, påbygg. Ta kontakt for en gratis vurdering av ditt prosjekt.',
+      'Sannsynligvis, ja. Søker du kommunen om tilbygg, bruksendring, ny boenhet eller påbygg, følger det som regel krav til brannteknisk dokumentasjon. Send oss noen ord om prosjektet, så sier vi ifra.',
   },
   {
-    question: 'Er befaring nødvendig?',
+    question: 'Må dere befare bygget først?',
     answer:
-      'For nybygg og enklere saker er det ofte ikke nødvendig. Takket være digitale verktøy og kartdata kan vi i mange tilfeller jobbe uten fysisk befaring.',
+      'Ikke alltid. Ved nybygg og de fleste tilbygg holder det med tegninger og kartdata. Er bygningen eldre eller mer komplisert, avtaler vi en befaring.',
   },
   {
-    question: 'Er dere sentralt godkjent?',
+    question: 'Har eldre bygg i Finnmark spesielle branntekniske utfordringer?',
     answer:
-      'Ja, vi har sentral godkjenning for brannprosjektering i tiltaksklasse 1 og 2. Dette er en garanti for at vi er seriøse, godt forsikret og har dokumenterte referanseprosjekter.',
+      'Mye av bygningsmassen i Finnmark er fra gjenreisningen etter andre verdenskrig, da store deler av fylket ble bygget opp igjen i høyt tempo. Disse byggene er sjelden dokumentert etter dagens krav, og vi ser ofte behov for oppgradering av rømningsveier og brannceller ved ombygging eller bruksendring.',
+  },
+  {
+    question: 'Hva innebærer det at dere er sentralt godkjent?',
+    answer:
+      'Vi har sentral godkjenning fra DiBK for brannprosjektering i tiltaksklasse 1 og 2 — dokumentasjon på at vi har kompetansen, forsikringen og kvalitetssystemet som kreves for å ta ansvarsrett i byggesaken.',
   },
   {
     question: 'Tar dere oppdrag utenfor Alta?',
@@ -178,8 +182,8 @@ export default function HomePage() {
             Brannprosjektering av uavhengig rådgiver
           </h1>
           <p className="hero-3 text-brand-white/70 text-base lg:text-lg leading-relaxed mb-8 max-w-xl">
-            Vi hjelper deg med brannprosjektering i Alta og Finnmark. Sentralt godkjent foretak
-            med over 1200 gjennomførte prosjekter, fast pris og personlig oppfølging.
+            Over 1200 gjennomførte prosjekter — fra oppgradering av gjenreisningsbygg til nye
+            boligfelt og næringsbygg i Finnmark. Fastpris, og svar på henvendelsen din innen 24 timer.
           </p>
           <div className="hero-4 flex flex-wrap gap-4 mb-10">
             <Link
@@ -215,7 +219,7 @@ export default function HomePage() {
           <ScrollReveal className="text-center mb-12">
             <p className="font-accent text-brand-orange text-xl mb-2">Våre tjenester</p>
             <h2 className="text-brand-black text-3xl lg:text-4xl font-black">
-              Hva kan vi hjelpe deg med?
+              Fra brannkonsept til ferdig byggesak
             </h2>
           </ScrollReveal>
           <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4 lg:pb-0 lg:overflow-visible lg:grid lg:grid-cols-4">
@@ -341,11 +345,11 @@ export default function HomePage() {
         </div>
         <ScrollReveal variant="fade" className="relative z-10 max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-brand-white text-3xl lg:text-4xl font-black mb-4">
-            Klar for å komme i gang?
+            Send oss prosjektet ditt
           </h2>
           <p className="text-brand-white/70 text-lg mb-8 max-w-xl mx-auto">
-            Ta kontakt i dag for et uforpliktende tilbud på brannprosjektering i Alta.
-            Vi svarer innen 24 timer.
+            Fortell oss kort om bygget og hva du trenger — så har du et fastprisforslag
+            i hånden innen 24 timer.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

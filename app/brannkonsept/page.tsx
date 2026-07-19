@@ -37,14 +37,14 @@ const faqItems = [
       'Et brannkonsept er en mer helhetlig rapport som beskriver brannsikkerhetsnivået til hele byggverket. Et brannteknisk notat er enklere og brukes for mindre tiltak. Vi veileder deg til riktig løsning for ditt prosjekt — ta kontakt for en gratis vurdering.',
   },
   {
-    question: 'Er befaring nødvendig for brannkonsept?',
+    question: 'Krever dere befaring for å utarbeide brannkonseptet?',
     answer:
-      'For nybygg og enklere saker er det sjelden nødvendig med befaring. Takket være digitale kartdata og gode tegningsunderlag kan vi i mange tilfeller utarbeide brannkonseptet uten fysisk befaring. Vi gir beskjed dersom vi ser behov for det.',
+      'Sjelden — for nybygg og enklere tilbygg holder det som regel med tegninger og kartdata. For eldre bygg uten oppdatert tegningsgrunnlag, som det finnes en del av i Finnmark etter gjenreisningen, avtaler vi gjerne en befaring.',
   },
   {
-    question: 'Hva koster et brannkonsept i Alta?',
+    question: 'Hva ligger prisen på et brannkonsept på?',
     answer:
-      'Et brannkonsept i tiltaksklasse 2 starter fra ca. 15 000 kr ekskl. mva., inkludert branntegninger. Vi tilbyr alltid fastpris slik at du slipper ubehagelige overraskelser. Send oss informasjon om prosjektet for et nøyaktig tilbud.',
+      'Et brannkonsept i tiltaksklasse 2 starter fra ca. 15 000 kr ekskl. mva., inkludert branntegninger. Vi oppgir alltid fastpris før vi setter i gang, uansett hvor i Finnmark prosjektet er.',
   },
   {
     question: 'Tilbyr dere håndverkertjenester?',
@@ -52,9 +52,9 @@ const faqItems = [
       'Nei — vi er en nøytral rådgiver og selger ingen produkter eller håndverkertjenester. Dette sikrer at rådgivningen vår alltid er uavhengig og i ditt beste interesse.',
   },
   {
-    question: 'Hva trengs for å få et pristilbud?',
+    question: 'Hva må jeg sende dere for å få et pristilbud?',
     answer:
-      'For å gi et nøyaktig tilbud trenger vi: adresse/matrikkel, antall etasjer og bruksareal, tegninger (situasjonsplan og plantegninger) og en kort prosjektbeskrivelse. Send dette til oss så sender vi tilbud innen 24 timer.',
+      'Adresse eller matrikkel, antall etasjer og bruksareal, tegninger (situasjonsplan og plantegninger), og en kort beskrivelse av prosjektet. Send dette til oss, så har du tilbud i innboksen innen 24 timer.',
   },
   {
     question: 'Hvor lang tid tar det å utarbeide et brannkonsept?',
@@ -108,7 +108,7 @@ export default function BrannkonseptPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-              Et brannkonsept er en skriftlig rapport som oppsummerer bygningens brannsikkerhetsnivå. Ved byggesaker krever kommunen som regel prosjekteringsdokumentasjon på brannkonseptnivå — en helhetlig overordnet plan som ivaretar brannsikkerheten både for det omsøkte tiltaket og den øvrige bygningsmassen. Vi hjelper private, arkitekter, entreprenører og utbyggere i Alta og omegn med å utarbeide komplette brannkonsept til fast pris.
+              Et brannkonsept er en skriftlig rapport som oppsummerer bygningens brannsikkerhetsnivå. Ved byggesaker krever kommunen som regel prosjekteringsdokumentasjon på brannkonseptnivå — en helhetlig overordnet plan som ivaretar brannsikkerheten både for det omsøkte tiltaket og den øvrige bygningsmassen. Vi hjelper private, arkitekter, entreprenører og utbyggere med å utarbeide komplette brannkonsept til fast pris — enten det gjelder et nytt boligfelt, et tilbygg på en eldre bolig eller et næringsbygg ved havna.
             </p>
           </ScrollReveal>
 
