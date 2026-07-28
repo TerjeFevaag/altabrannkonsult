@@ -8,7 +8,14 @@ type Status = 'idle' | 'submitting' | 'success' | 'error'
 
 const MAX_FILES = 4
 const MAX_FILE_BYTES = 20 * 1024 * 1024
-const ALLOWED_TYPES = ['application/pdf', 'image/jpeg', 'image/png', 'image/webp']
+// Matched by file extension rather than MIME type: browsers frequently report an
+// empty or generic type (e.g. application/octet-stream) for CAD formats like DWG/DXF.
+const ALLOWED_EXTENSIONS = ['.pdf', '.jpg', '.jpeg', '.png', '.gif', '.webp', '.dwg', '.dxf']
+
+function hasAllowedExtension(file: File) {
+  const name = file.name.toLowerCase()
+  return ALLOWED_EXTENSIONS.some((ext) => name.endsWith(ext))
+}
 
 function formatBytes(bytes: number) {
   if (bytes < 1024 * 1024) return `${Math.max(1, Math.round(bytes / 1024))} KB`
@@ -28,10 +35,10 @@ export default function ContactForm() {
     event.target.value = ''
     if (picked.length === 0) return
 
-    const invalidType = picked.find((file) => !ALLOWED_TYPES.includes(file.type))
+    const invalidType = picked.find((file) => !hasAllowedExtension(file))
     if (invalidType) {
       setStatus('error')
-      setErrorMessage(`Filtypen til «${invalidType.name}» støttes ikke. Last opp PDF, JPG, PNG eller WEBP.`)
+      setErrorMessage(`Filtypen til «${invalidType.name}» støttes ikke. Last opp PDF, JPG, PNG, GIF, WEBP, DWG eller DXF.`)
       return
     }
 
@@ -195,7 +202,7 @@ export default function ContactForm() {
         <input
           ref={fileInputRef}
           type="file"
-          accept=".pdf,.jpg,.jpeg,.png,.webp,application/pdf,image/jpeg,image/png,image/webp"
+          accept=".pdf,.jpg,.jpeg,.png,.gif,.webp,.dwg,.dxf"
           multiple
           onChange={handleFileSelect}
           className="hidden"
@@ -209,7 +216,7 @@ export default function ContactForm() {
           Legg ved fil
         </button>
         <p className="text-brand-darkgray text-xs mt-1.5">
-          Maks {MAX_FILES} filer, {formatBytes(MAX_FILE_BYTES)} per fil. PDF, JPG, PNG eller WEBP.
+          Maks {MAX_FILES} filer, {formatBytes(MAX_FILE_BYTES)} per fil. PDF, JPG, PNG, GIF, WEBP, DWG eller DXF.
         </p>
 
         {files.length > 0 && (

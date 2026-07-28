@@ -10,7 +10,21 @@ export async function POST(request: Request): Promise<NextResponse> {
       request,
       onBeforeGenerateToken: async () => {
         return {
-          allowedContentTypes: ['application/pdf', 'image/jpeg', 'image/png', 'image/webp'],
+          // Wildcarded to image/* so jpg/png/gif/webp all match, plus pdf and a broad
+          // fallback for CAD formats (dwg/dxf) — browsers rarely report a consistent
+          // MIME type for those, often sending an empty string or octet-stream instead.
+          // The file input's accept attribute and the client-side extension check are
+          // the actual gatekeepers for file type; this list just needs to not reject them.
+          allowedContentTypes: [
+            'application/pdf',
+            'image/*',
+            'application/octet-stream',
+            'application/acad',
+            'application/x-acad',
+            'application/dxf',
+            'image/vnd.dwg',
+            'image/vnd.dxf',
+          ],
           maximumSizeInBytes: 20 * 1024 * 1024,
           addRandomSuffix: true,
         }
