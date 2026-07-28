@@ -1,23 +1,26 @@
 'use client'
 
 import { useState, useRef, type FormEvent, type ChangeEvent } from 'react'
+import { upload } from '@vercel/blob/client'
 import { CheckCircle2, AlertCircle, Loader2, Paperclip, FileText, X } from 'lucide-react'
 
 type Status = 'idle' | 'submitting' | 'success' | 'error'
 
-const MAX_FILES = 5
-const MAX_TOTAL_BYTES = 10 * 1024 * 1024
+const MAX_FILES = 4
+const MAX_FILE_BYTES = 20 * 1024 * 1024
 const ALLOWED_TYPES = ['application/pdf', 'image/jpeg', 'image/png', 'image/webp']
 
 function formatBytes(bytes: number) {
   if (bytes < 1024 * 1024) return `${Math.max(1, Math.round(bytes / 1024))} KB`
-  return `${(bytes / (1024 * 1024)).toFixed(1)} MB`
+  const mb = bytes / (1024 * 1024)
+  return `${mb % 1 === 0 ? mb.toFixed(0) : mb.toFixed(1)} MB`
 }
 
 export default function ContactForm() {
   const [status, setStatus] = useState<Status>('idle')
   const [errorMessage, setErrorMessage] = useState('')
   const [files, setFiles] = useState<File[]>([])
+  const [uploadProgress, setUploadProgress] = useState('')
   const fileInputRef = useRef<HTMLInputElement>(null)
 
   function handleFileSelect(event: ChangeEvent<HTMLInputElement>) {
@@ -25,10 +28,17 @@ export default function ContactForm() {
     event.target.value = ''
     if (picked.length === 0) return
 
-    const invalid = picked.find((file) => !ALLOWED_TYPES.includes(file.type))
-    if (invalid) {
+    const invalidType = picked.find((file) => !ALLOWED_TYPES.includes(file.type))
+    if (invalidType) {
       setStatus('error')
-      setErrorMessage(`Filtypen til «${invalid.name}» støttes ikke. Last opp PDF, JPG, PNG eller WEBP.`)
+      setErrorMessage(`Filtypen til «${invalidType.name}» støttes ikke. Last opp PDF, JPG, PNG eller WEBP.`)
+      return
+    }
+
+    const tooLarge = picked.find((file) => file.size > MAX_FILE_BYTES)
+    if (tooLarge) {
+      setStatus('error')
+      setErrorMessage(`«${tooLarge.name}» er for stor. Maks filstørrelse er 20 MB.`)
       return
     }
 
@@ -36,13 +46,6 @@ export default function ContactForm() {
     if (combined.length > MAX_FILES) {
       setStatus('error')
       setErrorMessage(`Du kan laste opp maks ${MAX_FILES} filer.`)
-      return
-    }
-
-    const totalBytes = combined.reduce((sum, file) => sum + file.size, 0)
-    if (totalBytes > MAX_TOTAL_BYTES) {
-      setStatus('error')
-      setErrorMessage('Vedleggene er for store til sammen (maks 10 MB). Reduser antall eller størrelse på filene.')
       return
     }
 
@@ -61,13 +64,25 @@ export default function ContactForm() {
     setErrorMessage('')
 
     const form = event.currentTarget
-    const formData = new FormData(form)
-    files.forEach((file) => formData.append('vedlegg', file))
+    const formValues = Object.fromEntries(new FormData(form).entries())
 
     try {
+      const vedlegg: { name: string; url: string }[] = []
+      for (let i = 0; i < files.length; i++) {
+        setUploadProgress(`Laster opp fil ${i + 1} av ${files.length}…`)
+        const file = files[i]
+        const blob = await upload(`vedlegg/${file.name}`, file, {
+          access: 'public',
+          handleUploadUrl: '/api/upload',
+        })
+        vedlegg.push({ name: file.name, url: blob.url })
+      }
+      setUploadProgress('')
+
       const res = await fetch('/api/contact', {
         method: 'POST',
-        body: formData,
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...formValues, vedlegg }),
       })
       const data = await res.json().catch(() => ({}))
 
@@ -81,8 +96,9 @@ export default function ContactForm() {
       form.reset()
       setFiles([])
     } catch {
+      setUploadProgress('')
       setStatus('error')
-      setErrorMessage('Noe gikk galt. Sjekk internettforbindelsen og prøv igjen.')
+      setErrorMessage('Noe gikk galt under opplasting. Sjekk internettforbindelsen og prøv igjen.')
     }
   }
 
@@ -193,7 +209,7 @@ export default function ContactForm() {
           Legg ved fil
         </button>
         <p className="text-brand-darkgray text-xs mt-1.5">
-          Maks 5 filer, totalt 10 MB. PDF, JPG, PNG eller WEBP.
+          Maks {MAX_FILES} filer, {formatBytes(MAX_FILE_BYTES)} per fil. PDF, JPG, PNG eller WEBP.
         </p>
 
         {files.length > 0 && (
@@ -235,7 +251,7 @@ export default function ContactForm() {
         className="w-full bg-brand-orange text-brand-white font-bold px-8 py-4 rounded-[10px] hover:opacity-90 transition-opacity text-base disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-2"
       >
         {status === 'submitting' && <Loader2 size={18} className="animate-spin" />}
-        {status === 'submitting' ? 'Sender...' : 'Send forespørsel'}
+        {status === 'submitting' ? uploadProgress || 'Sender...' : 'Send forespørsel'}
       </button>
     </form>
   )
