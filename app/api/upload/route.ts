@@ -24,6 +24,8 @@ export async function POST(request: Request): Promise<NextResponse> {
             'application/dxf',
             'image/vnd.dwg',
             'image/vnd.dxf',
+            'application/msword',
+            'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
           ],
           maximumSizeInBytes: 20 * 1024 * 1024,
           addRandomSuffix: true,

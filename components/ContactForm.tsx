@@ -10,7 +10,7 @@ const MAX_FILES = 4
 const MAX_FILE_BYTES = 20 * 1024 * 1024
 // Matched by file extension rather than MIME type: browsers frequently report an
 // empty or generic type (e.g. application/octet-stream) for CAD formats like DWG/DXF.
-const ALLOWED_EXTENSIONS = ['.pdf', '.jpg', '.jpeg', '.png', '.gif', '.webp', '.dwg', '.dxf']
+const ALLOWED_EXTENSIONS = ['.pdf', '.jpg', '.jpeg', '.png', '.gif', '.webp', '.dwg', '.dxf', '.doc', '.docx']
 
 function hasAllowedExtension(file: File) {
   const name = file.name.toLowerCase()
@@ -38,7 +38,7 @@ export default function ContactForm() {
     const invalidType = picked.find((file) => !hasAllowedExtension(file))
     if (invalidType) {
       setStatus('error')
-      setErrorMessage(`Filtypen til «${invalidType.name}» støttes ikke. Last opp PDF, JPG, PNG, GIF, WEBP, DWG eller DXF.`)
+      setErrorMessage(`Filtypen til «${invalidType.name}» støttes ikke. Last opp PDF, JPG, PNG, GIF, WEBP, DWG, DXF, DOC eller DOCX.`)
       return
     }
 
@@ -202,7 +202,7 @@ export default function ContactForm() {
         <input
           ref={fileInputRef}
           type="file"
-          accept=".pdf,.jpg,.jpeg,.png,.gif,.webp,.dwg,.dxf"
+          accept=".pdf,.jpg,.jpeg,.png,.gif,.webp,.dwg,.dxf,.doc,.docx"
           multiple
           onChange={handleFileSelect}
           className="hidden"
@@ -216,7 +216,7 @@ export default function ContactForm() {
           Legg ved fil
         </button>
         <p className="text-brand-darkgray text-xs mt-1.5">
-          Maks {MAX_FILES} filer, {formatBytes(MAX_FILE_BYTES)} per fil. PDF, JPG, PNG, GIF, WEBP, DWG eller DXF.
+          Maks {MAX_FILES} filer, {formatBytes(MAX_FILE_BYTES)} per fil. PDF, JPG, PNG, GIF, WEBP, DWG, DXF, DOC eller DOCX.
         </p>
 
         {files.length > 0 && (
