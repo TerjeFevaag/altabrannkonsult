@@ -129,17 +129,16 @@ export default function BrannkonseptPage() {
           <ScrollReveal>
             <h2 className="text-brand-black text-2xl font-black mb-4">Hva inneholder et brannkonsept?</h2>
             <p className="text-brand-darkgray leading-relaxed mb-6">
-              Et komplett brannkonsept fra Brannkonsult AS inneholder:
+              Et brannkonsept fra oss er ikke et skjema fylt ut på autopilot — det er en vurdering tilpasset akkurat ditt bygg, enten det er en enebolig i et boligfelt eller et næringsbygg ved havna. Konseptet dekker:
             </p>
             <ul className="space-y-3 mb-8">
               {[
-                'Fastsettelse av risikoklasse (RKL) for alle bygningsdeler',
-                'Fastsettelse av brannklasse (BKL)',
-                'Oppdeling i brannceller og brannseksjoner',
-                'Beskrivelse av rømningsveier og røykventilasjon',
-                'Branntekniske tegninger (plantegninger med brannceller, rømning m.m.)',
-                'Vurdering av bærende og skille konstruksjoner',
-                'Krav til branntekniske installasjoner',
+                'Risikoklasse (RKL) og brannklasse (BKL) for byggverket',
+                'Inndeling i brannceller, og eventuelle brannseksjoner',
+                'Rømningsveier og løsning for røykventilasjon',
+                'Vurdering av hvordan bærende og skillende konstruksjoner må utføres',
+                'Krav til branntekniske installasjoner i bygget',
+                'Branntekniske plantegninger som viser celler, rømning og eventuell seksjonering',
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3 text-brand-darkgray">
                   <CheckCircle size={18} className="text-brand-orange shrink-0 mt-0.5" />
@@ -161,9 +160,9 @@ export default function BrannkonseptPage() {
               <ul className="space-y-2 text-brand-darkgray text-sm">
                 <li><strong>RKL 1:</strong> Garasjer, naust og lager (ingen personopphold)</li>
                 <li><strong>RKL 2:</strong> Boliger og hytter med evakueringsmulighet fra egen enhet</li>
-                <li><strong>RKL 4:</strong> Kontorbygg, undervisningsbygg</li>
-                <li><strong>RKL 5:</strong> Hoteller, sykehjem (sover/overnatting)</li>
-                <li><strong>RKL 6:</strong> Sykehus (svekkede beboere)</li>
+                <li><strong>RKL 4:</strong> Kontorbygg, skoler og andre bygg med kjente brukere</li>
+                <li><strong>RKL 5:</strong> Hoteller, turistanlegg og sykehjem — der folk sover</li>
+                <li><strong>RKL 6:</strong> Sykehus og institusjoner med pleietrengende beboere</li>
               </ul>
             </div>
           </ScrollReveal>
@@ -174,11 +173,11 @@ export default function BrannkonseptPage() {
             <h2 className="text-brand-black text-2xl font-black mb-4">Hva vi tilbyr</h2>
             <ul className="space-y-3 mb-8">
               {[
-                'Utarbeidelse av komplett brannkonsept',
-                'Branntekniske tegninger (brannceller, rømningsveier)',
+                'Komplett, søknadsklart brannkonsept',
+                'Branntekniske tegninger til byggesøknaden',
                 'Ansvarsrett overfor kommunen i tiltaksklasse 1 og 2',
-                'Fastpris — ingen skjulte kostnader',
-                'Levering innen 5–10 virkedager',
+                'Skriftlig fastpris før vi setter i gang',
+                'Levering normalt innen 5–10 virkedager, uansett hvor i Finnmark bygget står',
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3 text-brand-darkgray">
                   <CheckCircle size={18} className="text-brand-orange shrink-0 mt-0.5" />
@@ -194,7 +193,7 @@ export default function BrannkonseptPage() {
             <div className="bg-brand-lightgray rounded-[20px] p-6 mb-4">
               <h3 className="font-bold text-brand-black text-lg mb-2">Pris</h3>
               <p className="text-brand-darkgray">
-                Fra ca. <strong className="text-brand-black">15 000 kr</strong> i tiltaksklasse 2, inkl. branntegninger og ekskl. mva. Alltid fastpris.
+                I tiltaksklasse 2 starter et brannkonsept normalt fra <strong className="text-brand-black">15 000 kr</strong> ekskl. mva., branntegninger inkludert — alltid som fastpris, uansett hvor i Finnmark prosjektet ligger.
               </p>
             </div>
           </ScrollReveal>
@@ -234,7 +233,7 @@ export default function BrannkonseptPage() {
         <section className="bg-brand-orange py-14">
           <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-brand-white text-2xl lg:text-3xl font-black mb-4">
-              Kontakt oss for uforpliktende tilbud på brannkonsept i Alta
+              Send oss tegningene, så har du et pristilbud i hånden
             </h2>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/kontakt-oss" className="inline-block bg-brand-white text-brand-black font-bold px-8 py-3.5 rounded-[10px] hover:opacity-90 transition-opacity">

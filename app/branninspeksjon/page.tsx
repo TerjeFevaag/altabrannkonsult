@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { CheckCircle, Phone } from 'lucide-react'
+import { Phone } from 'lucide-react'
 import FAQAccordion from '@/components/FAQAccordion'
 import ScrollReveal from '@/components/ScrollReveal'
 import AuroraRibbon from '@/components/AuroraRibbon'
@@ -57,6 +57,11 @@ const faqItems = [
       'Eldre bygninger skal minst oppfylle et forsvarlig sikkerhetsnivå (ofte omtalt som BF85). Dette er særlig aktuelt i Finnmark, der mye av bygningsmassen stammer fra gjenreisningen etter krigen og sjelden er dokumentert etter dagens krav. Vi vurderer konkret hva som gjelder for ditt bygg.',
   },
   {
+    question: 'Må vi ha fått pålegg for å bestille en branninspeksjon?',
+    answer:
+      'Nei. Mange styrer og næringsdrivende bestiller en gjennomgang på eget initiativ — for eksempel før et eierskifte, i forkant av en forsikringsfornyelse, eller rett og slett for å vite hvor bygget faktisk står. Det er ofte rimeligere å rydde opp i egne avvik enn å svare på et pålegg med kort frist.',
+  },
+  {
     question: 'Tilbyr dere branninspeksjon utenfor Alta?',
     answer:
       'Ja. Foruten Alta bistår vi kunder i hele Finnmark — fra Hammerfest, Kirkenes, Vadsø og Vardø, via Kautokeino, Karasjok, Tana, Nesseby og Porsanger i innlandet, til Nordkapp, Måsøy, Loppa, Hasvik, Gamvik, Lebesby, Berlevåg og Båtsfjord langs kysten — samt i Troms og Nordland. Vi dekker med andre ord hele Nord-Norge, og tar også oppdrag i resten av landet.',
@@ -102,7 +107,7 @@ export default function BranninspeksjonPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-              Har kommunen vært på branntilsyn, eller ønsker du å kartlegge brannsikkerheten i en eldre bygning i Alta? Vi hjelper borettslag, sameier, næringsbygg og eiendomseiere med branninspeksjon og vurdering av byggets brannsikkerhet.
+              Har brannvesenet vært på tilsyn i bygget ditt, eller lurer du rett og slett på hvor godt sikret en eldre bolig, et sameie eller et næringsbygg i Alta faktisk er? Vi tilbyr en grundigere gjennomgang enn det et kommunalt tilsyn normalt rekker over — for borettslag, sameier, næringsbygg og private eiere i hele Finnmark.
             </p>
           </ScrollReveal>
 
@@ -121,38 +126,38 @@ export default function BranninspeksjonPage() {
           <div className="border-t border-brand-gray my-10" />
 
           <ScrollReveal>
-            <h2 className="text-brand-black text-2xl font-black mb-4">Krav til oppgradering av eldre bygg</h2>
+            <h2 className="text-brand-black text-2xl font-black mb-4">Hvorfor så mange bygg i Finnmark har et etterslep</h2>
             <p className="text-brand-darkgray leading-relaxed mb-8">
-              Eldre bygninger er ikke nødvendigvis bygget etter dagens forskriftskrav, men skal likevel oppfylle et forsvarlig minimumsnivå for brannsikkerhet. Vi vurderer hva som konkret kreves for ditt bygg og foreslår kostnadseffektive tiltak.
+              Alle bygninger i Norge skal minst tilfredsstille brannsikkerhetsnivået som gjaldt for nybygg i 1985 (BF85). I Finnmark treffer dette en uvanlig stor andel av bygningsmassen: det meste ble reist i årene rett etter 1945, i et tempo der dokumentasjon sjelden fulgte med. Det er ikke uvanlig at vi finner rømningsveier som er stengt igjen ved senere ombygging, brannceller som er brutt, eller manuelt slokkeutstyr som rett og slett er borte.
             </p>
           </ScrollReveal>
 
           <div className="border-t border-brand-gray my-10" />
 
           <ScrollReveal>
-            <h2 className="text-brand-black text-2xl font-black mb-4">Brann- og redningsetatens oppgave</h2>
+            <h2 className="text-brand-black text-2xl font-black mb-4">Et tilsyn er en stikkprøve — ikke en fasit</h2>
             <p className="text-brand-darkgray leading-relaxed mb-8">
-              Kommunens branntilsyn er som regel en stikkprøvekontroll, ikke en fullstendig gjennomgang av byggets brannsikkerhet. En egen branninspeksjon fra oss gir et mer helhetlig bilde og avdekker branntekniske mangler tilsynet ikke nødvendigvis fanger opp.
+              Brannvesenets tilsyn prioriterer bygg etter risiko, og rekker sjelden en fullstendig gjennomgang av hver enkelt bygning. Et bygg kan derfor fremstå uten anmerkninger etter et tilsyn, samtidig som det har reelle branntekniske svakheter tilsynet ikke hadde tid til å avdekke. Det er nettopp det gapet en egen branninspeksjon er laget for å dekke.
             </p>
           </ScrollReveal>
 
           <div className="border-t border-brand-gray my-10" />
 
           <ScrollReveal>
-            <h2 className="text-brand-black text-2xl font-black mb-4">Hva inngår i vår branninspeksjon</h2>
-            <ul className="space-y-3 mb-8">
+            <h2 className="text-brand-black text-2xl font-black mb-4">Slik gjennomfører vi inspeksjonen</h2>
+            <div className="space-y-6 mb-8">
               {[
-                'Inspeksjon av bygningen og branntekniske installasjoner',
-                'Tilstandsrapport med avvik og risikovurdering',
-                'Handlingsplan med prioriterte tiltak',
-                'Forslag til internkontrollrutiner',
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3 text-brand-darkgray">
-                  <CheckCircle size={18} className="text-brand-orange shrink-0 mt-0.5" />
-                  {item}
-                </li>
+                { title: 'Befaring', desc: 'Vi går gjennom bygningen fysisk — rømningsveier, brannceller, slokkeutstyr og tekniske installasjoner, i fellesarealer og i den enkelte enhet der det er relevant.' },
+                { title: 'Tilstandsrapport', desc: 'Skriftlig rapport der hvert avvik er beskrevet og rangert etter alvorlighetsgrad — fra det som må lukkes umiddelbart, til det som kan planlegges inn i vedlikeholdsbudsjettet.' },
+                { title: 'Handlingsplan med kostnadsoverslag', desc: 'Konkrete tiltak i prioritert rekkefølge, med et realistisk kostnadsanslag — noe styret eller eieren faktisk kan ta stilling til, ikke bare en liste over mangler.' },
+                { title: 'Rutiner videre', desc: 'Enkle forslag til internkontroll, slik at brannsikkerheten følges opp løpende og ikke blir en engangsøvelse.' },
+              ].map((step, i) => (
+                <div key={i}>
+                  <h3 className="font-bold text-brand-black mb-1">{step.title}</h3>
+                  <p className="text-brand-darkgray leading-relaxed">{step.desc}</p>
+                </div>
               ))}
-            </ul>
+            </div>
           </ScrollReveal>
 
           <div className="border-t border-brand-gray my-10" />
@@ -160,7 +165,7 @@ export default function BranninspeksjonPage() {
           <ScrollReveal>
             <h2 className="text-brand-black text-2xl font-black mb-4">Eier er ansvarlig — brannrådgiver hjelper deg</h2>
             <p className="text-brand-darkgray leading-relaxed mb-6">
-              Som eier eller styremedlem har du det formelle ansvaret for brannsikkerheten. Vi bistår med den faglige vurderingen slik at du kan ta gode, dokumenterte beslutninger.
+              Som eier, styremedlem eller driftsansvarlig sitter du med det formelle ansvaret for brannsikkerheten, uansett om det er en garasje i Bossekop eller et næringsbygg ved havna. Vår jobb er å gi deg et presist bilde av hvor bygget faktisk står, slik at beslutningen om utbedring er informert — ikke gjettverk.
             </p>
             <div className="bg-brand-lightgray rounded-[20px] p-6">
               <p className="text-brand-darkgray text-sm italic leading-relaxed">
@@ -189,7 +194,7 @@ export default function BranninspeksjonPage() {
         <section className="bg-brand-orange py-14">
           <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-brand-white text-2xl lg:text-3xl font-black mb-4">
-              Kontakt oss for hjelp etter branntilsyn i Alta
+              Usikker på hvor bygget ditt faktisk står?
             </h2>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/kontakt-oss" className="inline-block bg-brand-white text-brand-black font-bold px-8 py-3.5 rounded-[10px] hover:opacity-90 transition-opacity">

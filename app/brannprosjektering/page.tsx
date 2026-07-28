@@ -124,7 +124,7 @@ export default function BrannprosjekteringPage() {
           <ScrollReveal>
             <h2 className="text-brand-black text-2xl font-black mb-4">Når er det behov for brannprosjektering?</h2>
             <p className="text-brand-darkgray leading-relaxed mb-4">
-              De fleste byggetiltak som endrer bygningens bruk, størrelse eller planløsning krever brannteknisk prosjektering, blant annet:
+              De færreste tenker over at noe så enkelt som et vindusbytte kan utløse krav om brannteknisk vurdering — men sitter vinduet i en brannvegg eller rømningsvei, gjør det nettopp det. Typiske tilfeller vi ser i Alta og resten av Finnmark:
             </p>
             <ul className="space-y-3 mb-8">
               {[
@@ -132,6 +132,7 @@ export default function BrannprosjekteringPage() {
                 'Tilbygg og påbygg',
                 'Bruksendring, f.eks. fra bod til soverom',
                 'Etablering av ny boenhet (sekundærleilighet)',
+                'Oppgradering av hytte eller fritidsbolig til helårsbruk',
                 'Oppdeling av bygg i flere brannceller',
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3 text-brand-darkgray">
@@ -156,7 +157,7 @@ export default function BrannprosjekteringPage() {
           <ScrollReveal>
             <h2 className="text-brand-black text-2xl font-black mb-4">Start tidlig — spar penger</h2>
             <p className="text-brand-darkgray leading-relaxed mb-8">
-              Jo tidligere vi kommer inn i prosjektet, jo enklere og rimeligere blir løsningene. Ved å avklare branntekniske krav før byggesøknad unngår du kostbare endringer underveis i byggeprosessen.
+              Jo tidligere vi kommer inn i prosjektet, jo enklere og rimeligere blir løsningene. Det gjelder ekstra i Finnmark, der byggesesongen er kort og transport av materialer og fagfolk gjerne tar lengre tid enn lenger sør — brannkrav som dukker opp sent kan bety at du mister årets sesong, ikke bare penger på en endring.
             </p>
           </ScrollReveal>
 
@@ -203,7 +204,7 @@ export default function BrannprosjekteringPage() {
         <section className="bg-brand-orange py-14">
           <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-brand-white text-2xl lg:text-3xl font-black mb-4">
-              Be om tilbud på brannprosjektering i Alta
+              Involver oss før spaden settes i jorda
             </h2>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/kontakt-oss" className="inline-block bg-brand-white text-brand-black font-bold px-8 py-3.5 rounded-[10px] hover:opacity-90 transition-opacity">

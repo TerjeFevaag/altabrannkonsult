@@ -98,7 +98,7 @@ export default function UavhengigKontrollPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-              I mange byggeprosjekter er det krav om uavhengig kontroll (UK) av brannsikkerheten. Kontrollen skal sikre at brannkonseptet er i tråd med gjeldende forskrifter og at prosjekteringen holder nødvendig kvalitet. Dette gir økt trygghet, reduserer risiko for feil og bidrar til en mer forutsigbar byggeprosess.
+              Skal brannkonseptet kvalitetssikres av noen andre enn den som prosjekterte det? Vi tar oppdraget for byggeprosjekter i Alta og resten av Finnmark, uansett hvem som har utarbeidet det opprinnelige konseptet.
             </p>
           </ScrollReveal>
 
@@ -119,19 +119,22 @@ export default function UavhengigKontrollPage() {
           <ScrollReveal>
             <h2 className="text-brand-black text-2xl font-black mb-4">Når er det krav om uavhengig kontroll?</h2>
             <p className="text-brand-darkgray leading-relaxed mb-8">
-              Etter SAK10 er det krav om uavhengig kontroll når prosjekteringen av brannsikkerhet er i tiltaksklasse 2 eller høyere. Kommunen kan i tillegg stille krav om UK i enkeltsaker.
+              Etter SAK10 § 14-2 er det krav om uavhengig kontroll når brannprosjekteringen er i tiltaksklasse 2 eller høyere. I praksis treffer dette de fleste leilighetsbygg, næringsbygg og offentlige bygg i regionen — kommunen kan i tillegg stille krav om UK i enkeltsaker utover dette.
             </p>
           </ScrollReveal>
 
           <div className="border-t border-brand-gray my-10" />
 
           <ScrollReveal>
-            <h2 className="text-brand-black text-2xl font-black mb-4">Hva kontrolleres?</h2>
+            <h2 className="text-brand-black text-2xl font-black mb-4">Hva vi går gjennom</h2>
             <ul className="space-y-3 mb-8">
               {[
-                'Brannkonseptet og forutsetningene det bygger på',
-                'Branntekniske tegninger',
-                'Løsningsvalg opp mot TEK17',
+                'Om brannkonseptet er bygget på riktig risikoklasse og brannklasse',
+                'Branncelleinndeling og eventuelle seksjoneringer',
+                'Rømningsveier og løsning for røykventilasjon',
+                'Om branntekniske installasjoner er tilstrekkelig beskrevet',
+                'Om branntegningene faktisk stemmer med det konseptet beskriver',
+                'Avvik fra preaksepterte løsninger, og om disse er tilstrekkelig begrunnet',
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3 text-brand-darkgray">
                   <CheckCircle size={18} className="text-brand-orange shrink-0 mt-0.5" />
@@ -144,27 +147,9 @@ export default function UavhengigKontrollPage() {
           <div className="border-t border-brand-gray my-10" />
 
           <ScrollReveal>
-            <h2 className="text-brand-black text-2xl font-black mb-4">Hva vi tilbyr</h2>
-            <ul className="space-y-3 mb-8">
-              {[
-                'Uavhengig gjennomgang av brannkonsept',
-                'Skriftlig kontrollrapport',
-                'Erklæring av ansvarsrett for uavhengig kontroll',
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3 text-brand-darkgray">
-                  <CheckCircle size={18} className="text-brand-orange shrink-0 mt-0.5" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </ScrollReveal>
-
-          <div className="border-t border-brand-gray my-10" />
-
-          <ScrollReveal>
-            <h2 className="text-brand-black text-2xl font-black mb-4">Nøytral part</h2>
+            <h2 className="text-brand-black text-2xl font-black mb-4">Ingen bindinger, ingen produkter å selge</h2>
             <p className="text-brand-darkgray leading-relaxed">
-              Vi selger ingen produkter eller håndverkertjenester. Som uavhengig kontrollør er vår eneste rolle å vurdere om brannsikkerheten er tilstrekkelig dokumentert og prosjektert — det gir deg en trygg og objektiv vurdering.
+              Kontrollen munner ut i en skriftlig rapport med eventuelle avvik og en erklæring om ansvarsrett som legges ved byggesøknaden. Vi har ingen tilknytning til leverandører av sprinkleranlegg, brannalarmer eller andre løsninger — vurderingen vår er styrt av regelverket, ikke av hva som eventuelt er lønnsomt å anbefale.
             </p>
           </ScrollReveal>
         </div>
@@ -187,7 +172,7 @@ export default function UavhengigKontrollPage() {
         <section className="bg-brand-orange py-14">
           <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-brand-white text-2xl lg:text-3xl font-black mb-4">
-              Kontakt oss for uavhengig kontroll i Alta
+              Send oss brannkonseptet, så ser vi på det
             </h2>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/kontakt-oss" className="inline-block bg-brand-white text-brand-black font-bold px-8 py-3.5 rounded-[10px] hover:opacity-90 transition-opacity">
