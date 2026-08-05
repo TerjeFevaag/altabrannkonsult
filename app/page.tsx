@@ -73,7 +73,7 @@ const reviews = [
   },
   {
     quote:
-      'Gjennomarbeidet, godt beskrevet, bonus for å inkludere byggdetaljer/løsninger.',
+      'Gjennomarbeidet, godt beskrevet, bonus for å inkludere byggdetaljer/ løsninger.',
     author: 'Kristine Wessel',
     company: 'Langfeldt Wessel Arkitekter AS',
   },
