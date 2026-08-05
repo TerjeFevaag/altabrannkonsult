@@ -96,9 +96,8 @@ const reviews = [
   },
   {
     quote:
-      'Vi får kjappe tilbakemeldinger ved brannprosjektering på forespurte tiltak.',
-    author: 'Terje Dahl',
-    company: 'Follo Bygg & Eiendom AS',
+      'Svært god service. Trygt med folk som kan faget sitt. Fekk svært god hjelp og mange gode tips og innspel under byggeprosessen.',
+    author: 'Brynjulf Hardang',
   },
 ]
 
