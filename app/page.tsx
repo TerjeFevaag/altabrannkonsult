@@ -68,35 +68,37 @@ const stats = [
 const reviews = [
   {
     quote:
-      'Brannkonsult utarbeidet et ryddig og svært grundig dokument som ble til god nytte under oppføring av et tilbygg i et bevaringsverdig område i Fredrikstad. Det ga den nødvendige tryggheten vedr brannforskrifter for meg som byggherre og for de ansvarlige for bygget. I tillegg er jeg blitt møtt med stor imøtekommenhet og gode svar ved flere telefonhenvendelser både før og etter at jeg mottok dokumentet. Jeg gir mine beste anbefalinger.',
-    author: 'Anne-Grete Halmrast',
+      'Vi fikk utarbeidet et brannteknisk notat da vi skulle bygge en ny balkong som kom for nære naboen. De rådene vi fikk var til stor hjelp for oss for å forstå hva vi måtte gjøre. Dette gjorde og prosessen med å få de nødvendige underskriftene fra nabo og godkjenning på prosjektet fra kommunen. Opplevde løsningene som ble presentert som konstruktive og enkle. Hadde på forhånd vært i kontakt med andre eksperter som kom opp med mye mer omfattende løsninger. Alt i alt superfornøyd både med notatet og kommunikasjon med rådgiver.',
+    author: 'Rune Sjølie',
   },
   {
     quote:
-      'Raskt svar og god hjelp. Meget godt gjennomført brannkonsept som var greit å skjønne. Gode tips og forslag til endringer underveis. Meget fornøyd!',
-    author: 'Sandra Roksøy',
+      'Gjennomarbeidet, godt beskrevet, bonus for å inkludere byggdetaljer/løsninger.',
+    author: 'Kristine Wessel',
+    company: 'Langfeldt Wessel Arkitekter AS',
   },
   {
     quote:
-      'Fikk bistand med brannprosjektering ved oppføring av to stk. vertikaldelte tomannsboliger i Lørenskog kommune. Godt fornøyd med rapport og resultat, og tar kontakt med dem ved neste prosjekt som vil være aktuelt!',
-    author: 'Jon Steiland',
-    company: 'ASC Eiendomsutvikling AS',
+      'Ryddigt og proffesjonelt, kort leveringstid på prosjektering som var tydelig gjort av noen med kompetanse innen feltet.',
+    author: 'Morten Nielsen',
+    company: 'Viking Entreprenør AS',
   },
   {
     quote:
-      'Rask og god brannprosjektering. Har ingenting å utsette på hjelpen jeg fikk til mitt boligprosjekt i Tromsø.',
-    author: 'Tony Berntsen',
+      'Veldig hyggelig og løsningsorientert. Tar seg tid til spørsmål og ønske om endringer.',
+    author: 'Pål E. Grepperud',
+    company: 'Grepperud Boligutvikling AS',
   },
   {
     quote:
-      'Vi brukte Brannkonsult AS i forbindelse med et tilbygg på en barnehage. Vi fikk rask tilbakemelding på vår forespørsel, med veiledning og pris. Etter bestilling ble tjenesten levert i henhold til tilbud og leveringstid. Enkelt og greit godt fornøyd med hele prosessen.',
-    author: 'Håvard Musdalslien',
-    company: 'Contre AS',
+      'Jeg traff en hyggelig kar på telefonen og han forsto raskt hva jeg ønsket. Rapporten ble utarbeidet på avtalt tid og med det innholdet vi var enige om på forhånd. I tillegg fikk jeg en del muntlige råd og veiledninger som jeg satte pris på. I hele tatt en profesjonell håndtering av meg som kunde.',
+    author: 'Per Nilssen',
   },
   {
     quote:
-      'Thomas har ekspertise og gir en trygghet. Han forstod behovet vårt og har dekket det på en effektiv måte. Veldig fornøyd så langt!',
-    author: 'Ibrahim Temel',
+      'Vi får kjappe tilbakemeldinger ved brannprosjektering på forespurte tiltak.',
+    author: 'Terje Dahl',
+    company: 'Follo Bygg & Eiendom AS',
   },
 ]
 
